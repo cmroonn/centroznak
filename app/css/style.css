@@ -2398,7 +2398,8 @@ li {
 
 .category_list {
   display: grid;
-  max-width: 354px; }
+  max-width: 354px;
+  width: 100%; }
   .category_list li {
     background: #ffffff;
     border: 1px solid #e9e9e9;
