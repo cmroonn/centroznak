@@ -112,3 +112,34 @@
     }
   }
 }
+
+.product_card__tags {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+}
+.product_card__tags__new {
+  background: #393840;
+  font-weight: bold;
+  font-size: 1.125rem;
+  padding: 8px 13px;
+  color: white;
+  text-align: center;
+  min-width: 69px;
+}
+
+.product_card__tags__sale {
+  min-width: 69px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.125rem;
+  padding: 8px 13px;
+  color: white;
+  background: #26cf92;
+}
+
+.product_card__tags__item {
+  margin-bottom: 4px;
+}
