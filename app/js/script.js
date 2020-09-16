@@ -82,4 +82,20 @@ document.addEventListener("DOMContentLoaded", () => {
   } catch (e) {
     console.log(e);
   }
+
+  try {
+    const allFilters = document.querySelectorAll(".filter_block__heading");
+    const allFiltersPoints = document.querySelectorAll(".filter_block__points");
+    allFilters.forEach((filter) => {
+      filter.addEventListener("click", (e) => {
+        allFiltersPoints.forEach((points) => {
+          if (
+            points.closest(".filter_block") === filter.closest(".filter_block")
+          ) {
+            filter.parentElement.classList.toggle("show");
+          }
+        });
+      });
+    });
+  } catch {}
 });
