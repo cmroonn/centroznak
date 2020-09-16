@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="fonts/CeraPro/cera-pro.css" />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"
+      integrity="sha512-uCQmAoax6aJTxC03VlH0uCEtE0iLi83TW1Qh6VezEZ5Y17rTrIE+8irz4H4ehM7Fbfbm8rb30OkxVkuwhXxrRg=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="container">
+          <div class="header_wrap">
+            <a href="#" class="d-flex ai-center header__logo">
+              <img src="img/logo.png" alt="" />
+              <p class="text-uppercase">
+                Производитель светодиодной продукции.
+              </p>
+            </a>
+
+            <ul class="header__menu">
+              <li>
+                <a href="#" class="header_menu_point">
+                  Каталог
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.21507 5.10742L5.10753 9.21496L1 5.10742"
+                      stroke="#141414"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="header_menu_point"> Новинки </a>
+              </li>
+
+              <li>
+                <a href="#" class="header_menu_point"> Акции </a>
+              </li>
+
+              <li>
+                <a href="#" class="header_menu_point"> Блог </a>
+              </li>
+
+              <li>
+                <a href="#" class="header_menu_point"> Контакты </a>
+              </li>
+            </ul>
+
+            <select name="city" class="header__city">
+              <option value="Москва">Москва</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Киев">Киев</option>
+            </select>
+
+            <a href="tel:8(499)394-39-31" class="d-flex header__phone">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0"
+                  mask-type="alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="22"
+                  height="22"
+                >
+                  <rect width="22" height="22" fill="#C4C4C4" />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5 2.96078C5 1.87787 5.8687 1 6.9403 1H16.0597C17.1313 1 18 1.87787 18 2.96078V19.0392C18 20.1221 17.1313 21 16.0597 21H6.9403C5.8687 21 5 20.1221 5 19.0392V2.96078ZM6.9403 1.98039C6.4045 1.98039 5.97015 2.41933 5.97015 2.96078V19.0392C5.97015 19.5807 6.4045 20.0196 6.9403 20.0196H16.0597C16.5955 20.0196 17.0299 19.5807 17.0299 19.0392V2.96078C17.0299 2.41933 16.5955 1.98039 16.0597 1.98039H15.7201C15.3878 2.25763 15.2242 2.82976 15.132 3.47468C15.0592 3.98359 14.6469 4.38235 14.1381 4.38235H8.86191C8.35309 4.38235 7.94082 3.98359 7.86804 3.47468C7.77581 2.82976 7.61215 2.25763 7.27985 1.98039H6.9403ZM8.57452 2.25133C8.70136 2.59994 8.77741 2.97917 8.82821 3.33445C8.83272 3.36596 8.84701 3.38736 8.85807 3.39764C8.86045 3.39985 8.86347 3.40196 8.86347 3.40196H14.1365C14.1365 3.40196 14.1396 3.39985 14.1419 3.39764C14.153 3.38736 14.1673 3.36596 14.1718 3.33445C14.2226 2.97917 14.2986 2.59994 14.4255 2.25133C14.4574 2.1637 14.4944 2.07251 14.5379 1.98039H8.46213C8.50559 2.07251 8.54264 2.1637 8.57452 2.25133Z"
+                    fill="#141414"
+                  />
+                  <path
+                    d="M9.75373 2.71569C9.75373 2.52618 9.90575 2.37255 10.0933 2.37255H11.6455C11.8331 2.37255 11.9851 2.52618 11.9851 2.71569C11.9851 2.9052 11.8331 3.05882 11.6455 3.05882H10.0933C9.90575 3.05882 9.75373 2.9052 9.75373 2.71569Z"
+                    fill="#141414"
+                  />
+                  <path
+                    d="M12.3731 2.71569C12.3731 2.52618 12.5252 2.37255 12.7127 2.37255C12.9002 2.37255 13.0522 2.52618 13.0522 2.71569C13.0522 2.9052 12.9002 3.05882 12.7127 3.05882C12.5252 3.05882 12.3731 2.9052 12.3731 2.71569Z"
+                    fill="#141414"
+                  />
+                </g>
+              </svg>
+
+              8(499)394-39-31
+            </a>
+
+            <a href="#" class="header__cart">
+              <img src="img/icons/cart_icon.svg" alt="" />
+
+              <span class="header_counter">99+</span>
+            </a>
+
+            <a href="#" class="header__search">
+              <img src="img/icons/search_icon.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- breadcrumbs -->
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+
+          <li>Светодидные знаки</li>
+        </ul>
+      </div>
+
+      <div class="catalog">
+        <div class="container">
+          <div
+            class="catalog__heading_block"
+            style="background-image: url('img/catalog.png')"
+          >
+            <p class="catalog__heading_block__upper_heading">
+              Знаки, которые видно
+            </p>
+
+            <h1>Светодиодные знаки</h1>
+
+            <p class="catalog__heading_block__description">
+              Светодиодные знаки способны привлечь внимание водителей к опасным
+              участкам дорог, что особенно актуально при проведении ремонтных
+              или строительных работ. Отображенная информация хорошо
+              просматривается в темное время суток, независимо от погодных
+              явлений.
+            </p>
+          </div>
+          <!-- control panel -->
+          <section class="catalog__control-panel">
+            <!-- count items to show -->
+            <div class="catalog__control-panel__show">
+              Показывать:
+
+              <ul>
+                <li class="active">
+                  <a href="#">18</a>
+                </li>
+                <li>
+                  <a href="#">24</a>
+                </li>
+                <li>
+                  <a href="#">36</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- sort items by -->
+            <div class="catalog__control-panel__sort">
+              Сортировать:
+
+              <div class="select_head">По умолчанию</div>
+            </div>
+          </section>
+
+          <!-- main content -->
+          <section class="catalog__content">
+            <!-- filters -->
+            <div class="catalog__content__filters">
+              <!-- active filters -->
+              <div class="catalog__content__filters__active">
+                <div class="active_filter">
+                  <p>Цена</p>
+
+                  <span> 500 - 1500 Р </span>
+
+                  <button class="active_filter__remove">
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.3">
+                        <path
+                          d="M9.61748 7.77049C10.1275 8.28052 10.1275 9.10744 9.61748 9.61748C9.10744 10.1275 8.28052 10.1275 7.77048 9.61748L0.382525 2.22951C-0.127508 1.71948 -0.127508 0.892556 0.382524 0.382524C0.892556 -0.127508 1.71948 -0.127508 2.22951 0.382524L9.61748 7.77049Z"
+                          fill="#393840"
+                        ></path>
+                        <path
+                          d="M2.22951 9.61748C1.71948 10.1275 0.892556 10.1275 0.382524 9.61748C-0.127508 9.10744 -0.127508 8.28052 0.382525 7.77048L7.77048 0.382525C8.28052 -0.127507 9.10744 -0.127507 9.61748 0.382525C10.1275 0.892558 10.1275 1.71948 9.61748 2.22952L2.22951 9.61748Z"
+                          fill="#393840"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <div class="active_filter">
+                  <p>Объем</p>
+
+                  <span> 25 - 45 ml </span>
+
+                  <button class="active_filter__remove">
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.3">
+                        <path
+                          d="M9.61748 7.77049C10.1275 8.28052 10.1275 9.10744 9.61748 9.61748C9.10744 10.1275 8.28052 10.1275 7.77048 9.61748L0.382525 2.22951C-0.127508 1.71948 -0.127508 0.892556 0.382524 0.382524C0.892556 -0.127508 1.71948 -0.127508 2.22951 0.382524L9.61748 7.77049Z"
+                          fill="#393840"
+                        ></path>
+                        <path
+                          d="M2.22951 9.61748C1.71948 10.1275 0.892556 10.1275 0.382524 9.61748C-0.127508 9.10744 -0.127508 8.28052 0.382525 7.77048L7.77048 0.382525C8.28052 -0.127507 9.10744 -0.127507 9.61748 0.382525C10.1275 0.892558 10.1275 1.71948 9.61748 2.22952L2.22951 9.61748Z"
+                          fill="#393840"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="remove_all_filters">
+                  <button class="d-flex ai-center jc-center">
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.5">
+                        <path
+                          d="M9.61748 7.77049C10.1275 8.28052 10.1275 9.10744 9.61748 9.61748C9.10744 10.1275 8.28052 10.1275 7.77048 9.61748L0.382525 2.22951C-0.127508 1.71948 -0.127508 0.892556 0.382524 0.382524C0.892556 -0.127508 1.71948 -0.127508 2.22951 0.382524L9.61748 7.77049Z"
+                          fill="#393840"
+                        ></path>
+                        <path
+                          d="M2.22951 9.61748C1.71948 10.1275 0.892556 10.1275 0.382524 9.61748C-0.127508 9.10744 -0.127508 8.28052 0.382525 7.77048L7.77048 0.382525C8.28052 -0.127507 9.10744 -0.127507 9.61748 0.382525C10.1275 0.892558 10.1275 1.71948 9.61748 2.22952L2.22951 9.61748Z"
+                          fill="#393840"
+                        ></path>
+                      </g>
+                    </svg>
+
+                    Сбросить всё
+                  </button>
+                </div>
+              </div>
+
+              <!-- all filters -->
+
+              <div class="filter_block">
+                <p class="d-flex ai-center jc-between filter_block__heading">
+                  Харкатеристика
+
+                  <svg
+                    class="close_icon"
+                    width="12"
+                    height="4"
+                    viewBox="0 0 12 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.5"
+                      d="M10.8 0.799805C11.4627 0.799805 12 1.33706 12 1.9998C12 2.66255 11.4627 3.19981 10.8 3.19981L1.2 3.1998C0.537259 3.1998 -2.80979e-08 2.66255 0 1.9998C2.80979e-08 1.33706 0.537258 0.799805 1.2 0.799805L10.8 0.799805Z"
+                      fill="#434343"
+                    ></path>
+                  </svg>
+
+                  <svg
+                    class="open_icon"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.8 4.8C11.4627 4.8 12 5.33726 12 6C12 6.66274 11.4627 7.2 10.8 7.2L1.2 7.2C0.537259 7.2 -2.80979e-08 6.66274 0 6C2.80979e-08 5.33726 0.537258 4.8 1.2 4.8L10.8 4.8Z"
+                      fill="#434343"
+                    ></path>
+                    <path
+                      d="M7.2 10.8C7.2 11.4627 6.66274 12 6 12C5.33726 12 4.8 11.4627 4.8 10.8L4.8 1.2C4.8 0.537259 5.33726 -5.61958e-08 6 0C6.66274 5.61958e-08 7.2 0.537258 7.2 1.2L7.2 10.8Z"
+                      fill="#434343"
+                    ></path>
+                  </svg>
+                </p>
+
+                <div class="filter_block__points">
+                  <label class="filter_block__point">
+                    <input type="checkbox" name="size" />
+
+                    <span> 10-20 см </span>
+                  </label>
+
+                  <label class="filter_block__point">
+                    <input type="checkbox" name="size" />
+
+                    <span> 10-20 см </span>
+                  </label>
+
+                  <label class="filter_block__point">
+                    <input type="checkbox" name="size" />
+
+                    <span> 10-20 см </span>
+                  </label>
+
+                  <label class="filter_block__point">
+                    <input type="checkbox" name="size" />
+
+                    <span> 10-20 см </span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="filter_block show">
+                <p class="d-flex ai-center jc-between filter_block__heading">
+                  Харкатеристика
+
+                  <svg
+                    class="close_icon"
+                    width="12"
+                    height="4"
+                    viewBox="0 0 12 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.5"
+                      d="M10.8 0.799805C11.4627 0.799805 12 1.33706 12 1.9998C12 2.66255 11.4627 3.19981 10.8 3.19981L1.2 3.1998C0.537259 3.1998 -2.80979e-08 2.66255 0 1.9998C2.80979e-08 1.33706 0.537258 0.799805 1.2 0.799805L10.8 0.799805Z"
+                      fill="#434343"
+                    ></path>
+                  </svg>
+
+                  <svg
+                    class="open_icon"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.8 4.8C11.4627 4.8 12 5.33726 12 6C12 6.66274 11.4627 7.2 10.8 7.2L1.2 7.2C0.537259 7.2 -2.80979e-08 6.66274 0 6C2.80979e-08 5.33726 0.537258 4.8 1.2 4.8L10.8 4.8Z"
+                      fill="#434343"
+                    ></path>
+                    <path
+                      d="M7.2 10.8C7.2 11.4627 6.66274 12 6 12C5.33726 12 4.8 11.4627 4.8 10.8L4.8 1.2C4.8 0.537259 5.33726 -5.61958e-08 6 0C6.66274 5.61958e-08 7.2 0.537258 7.2 1.2L7.2 10.8Z"
+                      fill="#434343"
+                    ></path>
+                  </svg>
+                </p>
+
+                <div class="filter_block__points">
+                  <label class="filter_block__point">
+                    <input type="checkbox" name="size" />
+
+                    <span> 10-20 см </span>
+                  </label>
+
+                  <label class="filter_block__point">
+                    <input type="checkbox" name="size" />
+
+                    <span> 10-20 см </span>
+                  </label>
+
+                  <label class="filter_block__point">
+                    <input type="checkbox" name="size" />
+
+                    <span> 10-20 см </span>
+                  </label>
+
+                  <label class="filter_block__point">
+                    <input type="checkbox" name="size" />
+
+                    <span> 10-20 см </span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="filter_block show">
+                <p class="d-flex ai-center jc-between filter_block__heading">
+                  Харкатеристика
+
+                  <svg
+                    class="close_icon"
+                    width="12"
+                    height="4"
+                    viewBox="0 0 12 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.5"
+                      d="M10.8 0.799805C11.4627 0.799805 12 1.33706 12 1.9998C12 2.66255 11.4627 3.19981 10.8 3.19981L1.2 3.1998C0.537259 3.1998 -2.80979e-08 2.66255 0 1.9998C2.80979e-08 1.33706 0.537258 0.799805 1.2 0.799805L10.8 0.799805Z"
+                      fill="#434343"
+                    ></path>
+                  </svg>
+
+                  <svg
+                    class="open_icon"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.8 4.8C11.4627 4.8 12 5.33726 12 6C12 6.66274 11.4627 7.2 10.8 7.2L1.2 7.2C0.537259 7.2 -2.80979e-08 6.66274 0 6C2.80979e-08 5.33726 0.537258 4.8 1.2 4.8L10.8 4.8Z"
+                      fill="#434343"
+                    ></path>
+                    <path
+                      d="M7.2 10.8C7.2 11.4627 6.66274 12 6 12C5.33726 12 4.8 11.4627 4.8 10.8L4.8 1.2C4.8 0.537259 5.33726 -5.61958e-08 6 0C6.66274 5.61958e-08 7.2 0.537258 7.2 1.2L7.2 10.8Z"
+                      fill="#434343"
+                    ></path>
+                  </svg>
+                </p>
+
+                <div class="filter_block__points">
+                  <label class="filter_block__point">
+                    <input type="checkbox" name="size" />
+
+                    <span> 10-20 см </span>
+                  </label>
+
+                  <label class="filter_block__point">
+                    <input type="checkbox" name="size" />
+
+                    <span> 10-20 см </span>
+                  </label>
+
+                  <label class="filter_block__point">
+                    <input type="checkbox" name="size" />
+
+                    <span> 10-20 см </span>
+                  </label>
+
+                  <label class="filter_block__point">
+                    <input type="checkbox" name="size" />
+
+                    <span> 10-20 см </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- products -->
+            <div class="catalog__content__prods">
+              <div class="catalog__content__prods_wrap"></div>
+            </div>
+          </section>
+
+          <section class="about">
+            <h2 class="about__heading">Немного о <span>Центрознаке</span></h2>
+
+            <p class="about__paragraph">
+              Товарищи! сложившаяся структура организации обеспечивает широкому
+              кругу (специалистов) участие в формировании позиций, занимаемых
+              участниками в отношении поставленных задач. Идейные соображения
+              высшего порядка, а также укрепление и развитие структуры в
+              значительной степени обуславливает создание форм развития. Идейные
+              соображения высшего порядка, а также постоянное
+              информационно-пропагандистское обеспечение нашей деятельности в
+              значительной степени обуславливает создание форм развития.
+            </p>
+
+            <p class="about__paragraph">
+              Не следует, однако забывать, что укрепление и развитие структуры
+              позволяет выполнять важные задания по разработке существенных
+              финансовых и административных условий. Идейные соображения высшего
+              порядка, а также консультация с широким активом позволяет оценить
+              значение форм развития. Задача организации, в особенности же
+              дальнейшее развитие различных форм деятельности представляет собой
+              интересный эксперимент проверки форм развития. Повседневная
+              практика показывает, что консультация с широким активом в
+              значительной степени обуславливает создание систем массового
+              участия. Товарищи! реализация намеченных плановых заданий
+              обеспечивает широкому кругу (специалистов) участие в формировании
+              форм развития.
+            </p>
+
+            <button type="button" class="about__button">
+              <svg
+                width="58"
+                height="58"
+                viewBox="0 0 58 58"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M29 1C44.464 1 57 13.536 57 29C57 44.464 44.464 57 29 57C13.536 57 1 44.464 1 29C1 13.536 13.536 1 29 1Z"
+                  fill="#F8F8F8"
+                  stroke="white"
+                  stroke-width="2"
+                />
+                <path
+                  d="M22.2449 31.2674L28.4129 36.7825C28.7371 37.0725 29.2629 37.0725 29.5871 36.7825L35.7551 31.2674C36.2782 30.7997 35.9078 30 35.168 30L22.832 30C22.0922 30 21.7218 30.7997 22.2449 31.2674Z"
+                  fill="#404D63"
+                />
+                <path
+                  d="M22.2449 24.2674L28.4129 29.7825C28.7371 30.0725 29.2629 30.0725 29.5871 29.7825L35.7551 24.2674C36.2782 23.7997 35.9078 23 35.168 23L22.832 23C22.0922 23 21.7218 23.7997 22.2449 24.2674Z"
+                  fill="#404D63"
+                />
+              </svg>
+            </button>
+          </section>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__main">
+            <div class="footer__main__elem">
+              <a href="#" class="d-flex ai-center header__logo footer__logo">
+                <img src="img/logo.png" alt="" />
+                <p class="text-uppercase">
+                  Производитель светодиодной продукции.
+                </p>
+              </a>
+
+              <a
+                href="tel:8(499)394-39-31"
+                class="d-flex ai-center footer__phone"
+              >
+                <b> Москва: </b>
+
+                <span class="d-flex ai-center">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="mask0"
+                      mask-type="alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="22"
+                      height="22"
+                    >
+                      <rect width="22" height="22" fill="#C4C4C4"></rect>
+                    </mask>
+                    <g mask="url(#mask0)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5 2.96078C5 1.87787 5.8687 1 6.9403 1H16.0597C17.1313 1 18 1.87787 18 2.96078V19.0392C18 20.1221 17.1313 21 16.0597 21H6.9403C5.8687 21 5 20.1221 5 19.0392V2.96078ZM6.9403 1.98039C6.4045 1.98039 5.97015 2.41933 5.97015 2.96078V19.0392C5.97015 19.5807 6.4045 20.0196 6.9403 20.0196H16.0597C16.5955 20.0196 17.0299 19.5807 17.0299 19.0392V2.96078C17.0299 2.41933 16.5955 1.98039 16.0597 1.98039H15.7201C15.3878 2.25763 15.2242 2.82976 15.132 3.47468C15.0592 3.98359 14.6469 4.38235 14.1381 4.38235H8.86191C8.35309 4.38235 7.94082 3.98359 7.86804 3.47468C7.77581 2.82976 7.61215 2.25763 7.27985 1.98039H6.9403ZM8.57452 2.25133C8.70136 2.59994 8.77741 2.97917 8.82821 3.33445C8.83272 3.36596 8.84701 3.38736 8.85807 3.39764C8.86045 3.39985 8.86347 3.40196 8.86347 3.40196H14.1365C14.1365 3.40196 14.1396 3.39985 14.1419 3.39764C14.153 3.38736 14.1673 3.36596 14.1718 3.33445C14.2226 2.97917 14.2986 2.59994 14.4255 2.25133C14.4574 2.1637 14.4944 2.07251 14.5379 1.98039H8.46213C8.50559 2.07251 8.54264 2.1637 8.57452 2.25133Z"
+                        fill="#141414"
+                      ></path>
+                      <path
+                        d="M9.75373 2.71569C9.75373 2.52618 9.90575 2.37255 10.0933 2.37255H11.6455C11.8331 2.37255 11.9851 2.52618 11.9851 2.71569C11.9851 2.9052 11.8331 3.05882 11.6455 3.05882H10.0933C9.90575 3.05882 9.75373 2.9052 9.75373 2.71569Z"
+                        fill="#141414"
+                      ></path>
+                      <path
+                        d="M12.3731 2.71569C12.3731 2.52618 12.5252 2.37255 12.7127 2.37255C12.9002 2.37255 13.0522 2.52618 13.0522 2.71569C13.0522 2.9052 12.9002 3.05882 12.7127 3.05882C12.5252 3.05882 12.3731 2.9052 12.3731 2.71569Z"
+                        fill="#141414"
+                      ></path>
+                    </g>
+                  </svg>
+
+                  8(499)394-39-31
+                </span>
+              </a>
+
+              <a
+                href="tel:8(499)394-39-31"
+                class="d-flex ai-center footer__phone"
+              >
+                <b> Регионы: </b>
+
+                <span class="d-flex ai-center">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="mask0"
+                      mask-type="alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="22"
+                      height="22"
+                    >
+                      <rect width="22" height="22" fill="#C4C4C4"></rect>
+                    </mask>
+                    <g mask="url(#mask0)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5 2.96078C5 1.87787 5.8687 1 6.9403 1H16.0597C17.1313 1 18 1.87787 18 2.96078V19.0392C18 20.1221 17.1313 21 16.0597 21H6.9403C5.8687 21 5 20.1221 5 19.0392V2.96078ZM6.9403 1.98039C6.4045 1.98039 5.97015 2.41933 5.97015 2.96078V19.0392C5.97015 19.5807 6.4045 20.0196 6.9403 20.0196H16.0597C16.5955 20.0196 17.0299 19.5807 17.0299 19.0392V2.96078C17.0299 2.41933 16.5955 1.98039 16.0597 1.98039H15.7201C15.3878 2.25763 15.2242 2.82976 15.132 3.47468C15.0592 3.98359 14.6469 4.38235 14.1381 4.38235H8.86191C8.35309 4.38235 7.94082 3.98359 7.86804 3.47468C7.77581 2.82976 7.61215 2.25763 7.27985 1.98039H6.9403ZM8.57452 2.25133C8.70136 2.59994 8.77741 2.97917 8.82821 3.33445C8.83272 3.36596 8.84701 3.38736 8.85807 3.39764C8.86045 3.39985 8.86347 3.40196 8.86347 3.40196H14.1365C14.1365 3.40196 14.1396 3.39985 14.1419 3.39764C14.153 3.38736 14.1673 3.36596 14.1718 3.33445C14.2226 2.97917 14.2986 2.59994 14.4255 2.25133C14.4574 2.1637 14.4944 2.07251 14.5379 1.98039H8.46213C8.50559 2.07251 8.54264 2.1637 8.57452 2.25133Z"
+                        fill="#141414"
+                      ></path>
+                      <path
+                        d="M9.75373 2.71569C9.75373 2.52618 9.90575 2.37255 10.0933 2.37255H11.6455C11.8331 2.37255 11.9851 2.52618 11.9851 2.71569C11.9851 2.9052 11.8331 3.05882 11.6455 3.05882H10.0933C9.90575 3.05882 9.75373 2.9052 9.75373 2.71569Z"
+                        fill="#141414"
+                      ></path>
+                      <path
+                        d="M12.3731 2.71569C12.3731 2.52618 12.5252 2.37255 12.7127 2.37255C12.9002 2.37255 13.0522 2.52618 13.0522 2.71569C13.0522 2.9052 12.9002 3.05882 12.7127 3.05882C12.5252 3.05882 12.3731 2.9052 12.3731 2.71569Z"
+                        fill="#141414"
+                      ></path>
+                    </g>
+                  </svg>
+
+                  8(800)444-65-60
+                </span>
+              </a>
+            </div>
+
+            <div class="footer__main__elem">
+              <ul class="footer__menu">
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+                <li>
+                  <a href="#">Доставка и оплата</a>
+                </li>
+                <li>
+                  <a href="#">Как вернуть или обменять</a>
+                </li>
+                <li>
+                  <a href="#">Программа лоялности</a>
+                </li>
+                <li>
+                  <a href="#">О проекте</a>
+                </li>
+                <li>
+                  <a href="#">Сертификаты</a>
+                </li>
+                <li>
+                  <a href="#">Поставщикам</a>
+                </li>
+                <li>
+                  <a href="#">Реквизиты</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__main__elem">
+              <div class="footer__payment">
+                <p>Мы принимаем:</p>
+
+                <div class="footer__payment__item">
+                  <img
+                    src="https://cmroonn.github.io/tochka/dist/img/icons/visa-black.svg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="footer__payment__item">
+                  <img src="img/mastercard.svg" alt="" />
+                </div>
+
+                <div class="footer__payment__warning">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="mask0"
+                      mask-type="alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="18"
+                      height="18"
+                    >
+                      <rect width="18" height="18" fill="#C4C4C4" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                      <path
+                        d="M9.1818 6.45456C9.68389 6.45456 10.0909 6.04754 10.0909 5.54546C10.0909 5.04338 9.68389 4.63637 9.1818 4.63637C8.67972 4.63637 8.27271 5.04338 8.27271 5.54546C8.27271 6.04754 8.67972 6.45456 9.1818 6.45456Z"
+                        fill="#797979"
+                      />
+                      <path
+                        d="M11.1818 13H10.0909V7.18183H7.18183V7.9091H8.27273V13H7.18183V13.7273H11.1818V13Z"
+                        fill="#797979"
+                      />
+                      <path
+                        d="M17 9C17 4.5818 13.4182 1 9 1C4.5818 1 1 4.5818 1 9C1 13.4182 4.5818 17 9 17C13.4182 17 17 13.4182 17 9ZM1.72727 9C1.72727 4.98327 4.98327 1.72727 9 1.72727C13.0167 1.72727 16.2727 4.98327 16.2727 9C16.2727 13.0167 13.0167 16.2727 9 16.2727C4.98327 16.2727 1.72727 13.0167 1.72727 9Z"
+                        fill="#797979"
+                      />
+                    </g>
+                  </svg>
+
+                  <span> Так же вы можете оплатить покупки наличными. </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer__main__elem">
+              <div class="footer__questions">
+                <p>Остались вопросы?</p>
+
+                <span> Задайте их нам прямо сейчас! </span>
+
+                <button type="button">Задать вопрос</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__down">
+            <p class="footer__down__copy">Copyright ©  Центрознак, 2020</p>
+
+            <div class="d-flex ai-center footer__down__right">
+              <ul class="footer__down__links">
+                <li>
+                  <a href="#"> Пользовательское соглашение </a>
+                </li>
+
+                <li>
+                  <a href="#"> Политика обработки персональных данных </a>
+                </li>
+              </ul>
+
+              <a href="#" class="footer__down__creator">
+                Сделано в
+                <img src="img/sva.svg" alt="SVA Creative Agency" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
+      integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

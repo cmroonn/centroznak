@@ -1,0 +1,35 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 22px;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 0 22px 0;
+
+  li {
+    font-size: 1em;
+    color: rgb(20, 20, 20);
+    display: flex;
+    align-items: center;
+    a {
+      font-size: 1em;
+      color: rgba(20, 20, 20, 0.3);
+    }
+
+    &:after {
+      content: "";
+      background: url(../img/icons/arrow_right.svg) no-repeat;
+      background-size: 100% 100%;
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin: 0 12px;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

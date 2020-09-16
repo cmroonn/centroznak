@@ -1,0 +1,24 @@
+.partners {
+  padding: 98px 0;
+  background: #f8f8f8;
+}
+
+.partners__navigation {
+  margin-left: auto;
+}
+
+.partners__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+.partners__prev_slide,
+.partners__next_slide {
+  background: none;
+  border: none;
+
+  &.swiper-button-disabled {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="fonts/CeraPro/cera-pro.css" />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"
+      integrity="sha512-uCQmAoax6aJTxC03VlH0uCEtE0iLi83TW1Qh6VezEZ5Y17rTrIE+8irz4H4ehM7Fbfbm8rb30OkxVkuwhXxrRg=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="container">
+          <div class="header_wrap">
+            <a href="#" class="d-flex ai-center header__logo">
+              <img src="img/logo.png" alt="" />
+              <p class="text-uppercase">
+                Производитель светодиодной продукции.
+              </p>
+            </a>
+
+            <ul class="header__menu">
+              <li>
+                <a href="#" class="header_menu_point">
+                  Каталог
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.21507 5.10742L5.10753 9.21496L1 5.10742"
+                      stroke="#141414"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="header_menu_point"> Новинки </a>
+              </li>
+
+              <li>
+                <a href="#" class="header_menu_point"> Акции </a>
+              </li>
+
+              <li>
+                <a href="#" class="header_menu_point"> Блог </a>
+              </li>
+
+              <li>
+                <a href="#" class="header_menu_point"> Контакты </a>
+              </li>
+            </ul>
+
+            <select name="city" class="header__city">
+              <option value="Москва">Москва</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Киев">Киев</option>
+            </select>
+
+            <a href="tel:8(499)394-39-31" class="d-flex header__phone">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0"
+                  mask-type="alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="22"
+                  height="22"
+                >
+                  <rect width="22" height="22" fill="#C4C4C4" />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5 2.96078C5 1.87787 5.8687 1 6.9403 1H16.0597C17.1313 1 18 1.87787 18 2.96078V19.0392C18 20.1221 17.1313 21 16.0597 21H6.9403C5.8687 21 5 20.1221 5 19.0392V2.96078ZM6.9403 1.98039C6.4045 1.98039 5.97015 2.41933 5.97015 2.96078V19.0392C5.97015 19.5807 6.4045 20.0196 6.9403 20.0196H16.0597C16.5955 20.0196 17.0299 19.5807 17.0299 19.0392V2.96078C17.0299 2.41933 16.5955 1.98039 16.0597 1.98039H15.7201C15.3878 2.25763 15.2242 2.82976 15.132 3.47468C15.0592 3.98359 14.6469 4.38235 14.1381 4.38235H8.86191C8.35309 4.38235 7.94082 3.98359 7.86804 3.47468C7.77581 2.82976 7.61215 2.25763 7.27985 1.98039H6.9403ZM8.57452 2.25133C8.70136 2.59994 8.77741 2.97917 8.82821 3.33445C8.83272 3.36596 8.84701 3.38736 8.85807 3.39764C8.86045 3.39985 8.86347 3.40196 8.86347 3.40196H14.1365C14.1365 3.40196 14.1396 3.39985 14.1419 3.39764C14.153 3.38736 14.1673 3.36596 14.1718 3.33445C14.2226 2.97917 14.2986 2.59994 14.4255 2.25133C14.4574 2.1637 14.4944 2.07251 14.5379 1.98039H8.46213C8.50559 2.07251 8.54264 2.1637 8.57452 2.25133Z"
+                    fill="#141414"
+                  />
+                  <path
+                    d="M9.75373 2.71569C9.75373 2.52618 9.90575 2.37255 10.0933 2.37255H11.6455C11.8331 2.37255 11.9851 2.52618 11.9851 2.71569C11.9851 2.9052 11.8331 3.05882 11.6455 3.05882H10.0933C9.90575 3.05882 9.75373 2.9052 9.75373 2.71569Z"
+                    fill="#141414"
+                  />
+                  <path
+                    d="M12.3731 2.71569C12.3731 2.52618 12.5252 2.37255 12.7127 2.37255C12.9002 2.37255 13.0522 2.52618 13.0522 2.71569C13.0522 2.9052 12.9002 3.05882 12.7127 3.05882C12.5252 3.05882 12.3731 2.9052 12.3731 2.71569Z"
+                    fill="#141414"
+                  />
+                </g>
+              </svg>
+
+              8(499)394-39-31
+            </a>
+
+            <a href="#" class="header__cart">
+              <img src="img/icons/cart_icon.svg" alt="" />
+
+              <span class="header_counter">99+</span>
+            </a>
+
+            <a href="#" class="header__search">
+              <img src="img/icons/search_icon.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- breadcrumbs -->
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+
+          <li>Светодидные знаки</li>
+        </ul>
+      </div>
+
+      <div class="container cart-wrapper container-unset-mob">
+        <form class="cart" method="POST">
+          <div class="as-start cart__checkout">
+            <div class="cart__checkout-top">
+              <h2 class="subtitle">Ваш текущий заказ</h2>
+            </div>
+
+            <!-- Products -->
+            <div class="cart__checkout-products">
+              <!-- Product -->
+              <div class="cart__checkout-product">
+                <div class="d-flex jc-between">
+                  <div class="d-flex ai-center w-100">
+                    <div class="d-flex jc-center ai-center product-preview">
+                      <img src="img/item.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <div class="d-flex flex-column w-100 jc-between">
+                        <div class="d-flex jc-between">
+                          <h3>
+                            Знак с внутренней подсветкой 5.19.1-5.19.2
+                            “Пешеходный переход”
+                          </h3>
+
+                          <button type="button">
+                            <img src="img/icons/remove_icon.svg" alt="" />
+                          </button>
+                        </div>
+
+                        <div class="d-flex jc-between">
+                          <div class="count-block">
+                            <span class="minusCount">
+                              <img src="img/icons/remove.svg" alt="remove" />
+                            </span>
+
+                            <input class="count" type="num" value="1" />
+
+                            <span class="plusCount">
+                              <img src="img/icons/add_icon.svg" alt="add" />
+                            </span>
+                          </div>
+
+                          <p class="product-price">370 <span>₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart__checkout-total d-flex">
+              <div class="jc-between total-payment">
+                <span> Всего к оплате: </span>
+
+                <p class="total-payment-price">15,980 <span>₽</span></p>
+
+                <a href="#" class="dotted"> Продолжить покупки </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart__data" id="personal-data">
+            <div class="cart__data-block cart__data-personal">
+              <h2 class="subtitle">Личные данные</h2>
+
+              <div class="flex-column-mob cart__data-input-row">
+                <label class="cart-input">
+                  <div class="icon">
+                    <img src="img/icons/user_icon.svg" alt="user" />
+                  </div>
+                  <input
+                    type="text"
+                    name="firstname"
+                    placeholder="Имя"
+                    required=""
+                    class="field"
+                    tabindex="0"
+                  />
+                </label>
+
+                <label class="cart-input">
+                  <div class="icon">
+                    <img src="img/icons/user_icon.svg" alt="" />
+                  </div>
+                  <input
+                    type="text"
+                    name="lastname"
+                    placeholder="Фамилия"
+                    required=""
+                    tabindex="0"
+                  />
+                </label>
+              </div>
+
+              <div class="cart__data-input-row">
+                <label class="cart-input">
+                  <div class="icon">
+                    <img src="img/icons/phone_icon.svg" alt="phone" />
+                  </div>
+                  <input
+                    type="tel"
+                    name="tel"
+                    placeholder="Телефон*"
+                    required=""
+                    class="field"
+                  />
+                </label>
+
+                <label class="cart-input">
+                  <div class="icon">
+                    <img src="img/icons/mail_icon.svg" alt="e-mail" />
+                  </div>
+                  <input type="text" name="e-mail" placeholder="E-mail" />
+                </label>
+              </div>
+
+              <div class="cart__data-input-row">
+                <label class="cart-input cart-input-full">
+                  <div class="icon">
+                    <img src="img/icons/comment_icon.svg" alt="comment" />
+                  </div>
+                  <select name="city">
+                    <option value="Ваш город" selected="" disabled="">
+                      Ваш город
+                    </option>
+
+                    <option value="Москва">Москва</option>
+
+                    <option value="Екатеринбург">Екатеринбург</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="cart__data-input-row">
+                <label class="cart-input cart-input-full">
+                  <div class="icon">
+                    <img src="img/icons/comment_icon.svg" alt="comment" />
+                  </div>
+                  <textarea
+                    type="text"
+                    name="comment"
+                    placeholder="Здесь вы можете указать особенности заказа, пожелания и другое"
+                  ></textarea>
+                </label>
+              </div>
+            </div>
+
+            <div class="cart__data-block">
+              <h2 class="subtitle">Способ доставки</h2>
+
+              <!-- radio -->
+              <label class="cart-radio">
+                <input
+                  type="radio"
+                  value="Самовывоз"
+                  name="deliveryMethod"
+                  required=""
+                  checked=""
+                />
+
+                <span class="d-flex flex-column"> Самовывоз </span>
+              </label>
+
+              <!-- radio -->
+              <label class="cart-radio">
+                <input
+                  type="radio"
+                  value="Доставка транспортной компанией"
+                  name="deliveryMethod"
+                  required=""
+                />
+
+                <span class="d-flex flex-column">
+                  Доставка транспортной компанией
+                </span>
+              </label>
+            </div>
+
+            <div class="cart__data-block">
+              <h2 class="subtitle">Способ оплаты</h2>
+
+              <!-- radio -->
+              <label class="cart-radio">
+                <input
+                  type="radio"
+                  value="Наложенный платеж"
+                  name="payment"
+                  required=""
+                  checked=""
+                />
+
+                <span class="d-flex flex-column"> Наложенный платеж </span>
+              </label>
+
+              <!-- radio -->
+              <label class="cart-radio">
+                <input
+                  type="radio"
+                  value="Оплата наличными"
+                  name="payment"
+                  required=""
+                  id="onlinePayment"
+                />
+
+                <span class="d-flex flex-column"> Оплата наличными </span>
+              </label>
+
+              <!-- radio -->
+              <label class="cart-radio">
+                <input
+                  type="radio"
+                  value="Безналичный расчет"
+                  name="payment"
+                  required=""
+                />
+
+                <span class="d-flex ai-center jc-between">
+                  Безналичный расчет
+                </span>
+              </label>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="cart__data__total">
+              <span> Всего к оплате: </span>
+
+              <p>16.000<span class="currency">₽</span></p>
+
+              <button type="button">В корзину</button>
+
+              <label class="cart-checkbox cart__data-total-checkbox">
+                <input
+                  type="checkbox"
+                  value="Y"
+                  name="personal-data-checkbox"
+                  required=""
+                />
+                <span
+                  style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                  "
+                >
+                  Я подтверждаю свое согласие с &nbsp;
+                  <a
+                    href="#"
+                    class="dotted fw-700 text-uppercase"
+                    style="color: rgba(20, 20, 20, 0.5)"
+                  >
+                    Пользовательским соглашением
+                  </a>
+                </span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__main">
+            <div class="footer__main__elem">
+              <a href="#" class="d-flex ai-center header__logo footer__logo">
+                <img src="img/logo.png" alt="" />
+                <p class="text-uppercase">
+                  Производитель светодиодной продукции.
+                </p>
+              </a>
+
+              <a
+                href="tel:8(499)394-39-31"
+                class="d-flex ai-center footer__phone"
+              >
+                <b> Москва: </b>
+
+                <span class="d-flex ai-center">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="mask0"
+                      mask-type="alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="22"
+                      height="22"
+                    >
+                      <rect width="22" height="22" fill="#C4C4C4"></rect>
+                    </mask>
+                    <g mask="url(#mask0)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5 2.96078C5 1.87787 5.8687 1 6.9403 1H16.0597C17.1313 1 18 1.87787 18 2.96078V19.0392C18 20.1221 17.1313 21 16.0597 21H6.9403C5.8687 21 5 20.1221 5 19.0392V2.96078ZM6.9403 1.98039C6.4045 1.98039 5.97015 2.41933 5.97015 2.96078V19.0392C5.97015 19.5807 6.4045 20.0196 6.9403 20.0196H16.0597C16.5955 20.0196 17.0299 19.5807 17.0299 19.0392V2.96078C17.0299 2.41933 16.5955 1.98039 16.0597 1.98039H15.7201C15.3878 2.25763 15.2242 2.82976 15.132 3.47468C15.0592 3.98359 14.6469 4.38235 14.1381 4.38235H8.86191C8.35309 4.38235 7.94082 3.98359 7.86804 3.47468C7.77581 2.82976 7.61215 2.25763 7.27985 1.98039H6.9403ZM8.57452 2.25133C8.70136 2.59994 8.77741 2.97917 8.82821 3.33445C8.83272 3.36596 8.84701 3.38736 8.85807 3.39764C8.86045 3.39985 8.86347 3.40196 8.86347 3.40196H14.1365C14.1365 3.40196 14.1396 3.39985 14.1419 3.39764C14.153 3.38736 14.1673 3.36596 14.1718 3.33445C14.2226 2.97917 14.2986 2.59994 14.4255 2.25133C14.4574 2.1637 14.4944 2.07251 14.5379 1.98039H8.46213C8.50559 2.07251 8.54264 2.1637 8.57452 2.25133Z"
+                        fill="#141414"
+                      ></path>
+                      <path
+                        d="M9.75373 2.71569C9.75373 2.52618 9.90575 2.37255 10.0933 2.37255H11.6455C11.8331 2.37255 11.9851 2.52618 11.9851 2.71569C11.9851 2.9052 11.8331 3.05882 11.6455 3.05882H10.0933C9.90575 3.05882 9.75373 2.9052 9.75373 2.71569Z"
+                        fill="#141414"
+                      ></path>
+                      <path
+                        d="M12.3731 2.71569C12.3731 2.52618 12.5252 2.37255 12.7127 2.37255C12.9002 2.37255 13.0522 2.52618 13.0522 2.71569C13.0522 2.9052 12.9002 3.05882 12.7127 3.05882C12.5252 3.05882 12.3731 2.9052 12.3731 2.71569Z"
+                        fill="#141414"
+                      ></path>
+                    </g>
+                  </svg>
+
+                  8(499)394-39-31
+                </span>
+              </a>
+
+              <a
+                href="tel:8(499)394-39-31"
+                class="d-flex ai-center footer__phone"
+              >
+                <b> Регионы: </b>
+
+                <span class="d-flex ai-center">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="mask0"
+                      mask-type="alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="22"
+                      height="22"
+                    >
+                      <rect width="22" height="22" fill="#C4C4C4"></rect>
+                    </mask>
+                    <g mask="url(#mask0)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5 2.96078C5 1.87787 5.8687 1 6.9403 1H16.0597C17.1313 1 18 1.87787 18 2.96078V19.0392C18 20.1221 17.1313 21 16.0597 21H6.9403C5.8687 21 5 20.1221 5 19.0392V2.96078ZM6.9403 1.98039C6.4045 1.98039 5.97015 2.41933 5.97015 2.96078V19.0392C5.97015 19.5807 6.4045 20.0196 6.9403 20.0196H16.0597C16.5955 20.0196 17.0299 19.5807 17.0299 19.0392V2.96078C17.0299 2.41933 16.5955 1.98039 16.0597 1.98039H15.7201C15.3878 2.25763 15.2242 2.82976 15.132 3.47468C15.0592 3.98359 14.6469 4.38235 14.1381 4.38235H8.86191C8.35309 4.38235 7.94082 3.98359 7.86804 3.47468C7.77581 2.82976 7.61215 2.25763 7.27985 1.98039H6.9403ZM8.57452 2.25133C8.70136 2.59994 8.77741 2.97917 8.82821 3.33445C8.83272 3.36596 8.84701 3.38736 8.85807 3.39764C8.86045 3.39985 8.86347 3.40196 8.86347 3.40196H14.1365C14.1365 3.40196 14.1396 3.39985 14.1419 3.39764C14.153 3.38736 14.1673 3.36596 14.1718 3.33445C14.2226 2.97917 14.2986 2.59994 14.4255 2.25133C14.4574 2.1637 14.4944 2.07251 14.5379 1.98039H8.46213C8.50559 2.07251 8.54264 2.1637 8.57452 2.25133Z"
+                        fill="#141414"
+                      ></path>
+                      <path
+                        d="M9.75373 2.71569C9.75373 2.52618 9.90575 2.37255 10.0933 2.37255H11.6455C11.8331 2.37255 11.9851 2.52618 11.9851 2.71569C11.9851 2.9052 11.8331 3.05882 11.6455 3.05882H10.0933C9.90575 3.05882 9.75373 2.9052 9.75373 2.71569Z"
+                        fill="#141414"
+                      ></path>
+                      <path
+                        d="M12.3731 2.71569C12.3731 2.52618 12.5252 2.37255 12.7127 2.37255C12.9002 2.37255 13.0522 2.52618 13.0522 2.71569C13.0522 2.9052 12.9002 3.05882 12.7127 3.05882C12.5252 3.05882 12.3731 2.9052 12.3731 2.71569Z"
+                        fill="#141414"
+                      ></path>
+                    </g>
+                  </svg>
+
+                  8(800)444-65-60
+                </span>
+              </a>
+            </div>
+
+            <div class="footer__main__elem">
+              <ul class="footer__menu">
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+                <li>
+                  <a href="#">Доставка и оплата</a>
+                </li>
+                <li>
+                  <a href="#">Как вернуть или обменять</a>
+                </li>
+                <li>
+                  <a href="#">Программа лоялности</a>
+                </li>
+                <li>
+                  <a href="#">О проекте</a>
+                </li>
+                <li>
+                  <a href="#">Сертификаты</a>
+                </li>
+                <li>
+                  <a href="#">Поставщикам</a>
+                </li>
+                <li>
+                  <a href="#">Реквизиты</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__main__elem">
+              <div class="footer__payment">
+                <p>Мы принимаем:</p>
+
+                <div class="footer__payment__item">
+                  <img
+                    src="https://cmroonn.github.io/tochka/dist/img/icons/visa-black.svg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="footer__payment__item">
+                  <img src="img/mastercard.svg" alt="" />
+                </div>
+
+                <div class="footer__payment__warning">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="mask0"
+                      mask-type="alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="18"
+                      height="18"
+                    >
+                      <rect width="18" height="18" fill="#C4C4C4" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                      <path
+                        d="M9.1818 6.45456C9.68389 6.45456 10.0909 6.04754 10.0909 5.54546C10.0909 5.04338 9.68389 4.63637 9.1818 4.63637C8.67972 4.63637 8.27271 5.04338 8.27271 5.54546C8.27271 6.04754 8.67972 6.45456 9.1818 6.45456Z"
+                        fill="#797979"
+                      />
+                      <path
+                        d="M11.1818 13H10.0909V7.18183H7.18183V7.9091H8.27273V13H7.18183V13.7273H11.1818V13Z"
+                        fill="#797979"
+                      />
+                      <path
+                        d="M17 9C17 4.5818 13.4182 1 9 1C4.5818 1 1 4.5818 1 9C1 13.4182 4.5818 17 9 17C13.4182 17 17 13.4182 17 9ZM1.72727 9C1.72727 4.98327 4.98327 1.72727 9 1.72727C13.0167 1.72727 16.2727 4.98327 16.2727 9C16.2727 13.0167 13.0167 16.2727 9 16.2727C4.98327 16.2727 1.72727 13.0167 1.72727 9Z"
+                        fill="#797979"
+                      />
+                    </g>
+                  </svg>
+
+                  <span> Так же вы можете оплатить покупки наличными. </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer__main__elem">
+              <div class="footer__questions">
+                <p>Остались вопросы?</p>
+
+                <span> Задайте их нам прямо сейчас! </span>
+
+                <button type="button">Задать вопрос</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__down">
+            <p class="footer__down__copy">Copyright ©  Центрознак, 2020</p>
+
+            <div class="d-flex ai-center footer__down__right">
+              <ul class="footer__down__links">
+                <li>
+                  <a href="#"> Пользовательское соглашение </a>
+                </li>
+
+                <li>
+                  <a href="#"> Политика обработки персональных данных </a>
+                </li>
+              </ul>
+
+              <a href="#" class="footer__down__creator">
+                Сделано в
+                <img src="img/sva.svg" alt="SVA Creative Agency" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
+      integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
