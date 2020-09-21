@@ -728,7 +728,7 @@
 
                 <span> Задайте их нам прямо сейчас! </span>
 
-                <button type="button">Задать вопрос</button>
+                <button type="button" id="orderCallOpen">Задать вопрос</button>
               </div>
             </div>
           </div>
@@ -757,6 +757,95 @@
       </footer>
     </main>
 
+
+    <div class="popup order_call">
+      <form class="order_call__wrapper">
+        <button type="button" class="order_call__close closePopup">
+          <svg
+            width="27"
+            height="27"
+            viewBox="0 0 27 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.3">
+              <path
+                d="M19.6082 17.0208C20.3223 17.7348 20.3223 18.8925 19.6082 19.6066C18.8942 20.3206 17.7365 20.3206 17.0225 19.6066L6.67931 9.26341C5.96526 8.54937 5.96526 7.39167 6.67931 6.67762C7.39335 5.96358 8.55105 5.96358 9.2651 6.67762L19.6082 17.0208Z"
+                fill="#434343"
+              />
+              <path
+                d="M9.2651 19.6066C8.55105 20.3206 7.39335 20.3206 6.67931 19.6066C5.96526 18.8925 5.96526 17.7348 6.67931 17.0208L17.0225 6.67762C17.7365 5.96358 18.8942 5.96358 19.6082 6.67762C20.3223 7.39167 20.3223 8.54937 19.6082 9.26341L9.2651 19.6066Z"
+                fill="#434343"
+              />
+            </g>
+          </svg>
+        </button>
+
+        <h3>Пожалуйста, введите некоторые данные</h3>
+        <p>и мы свяжемся с вами в ближайшее время</p>
+
+        <label class="cart-input cart-input-full">
+          <div class="icon">
+            <img src="img/icons/user_icon.svg" alt="user" />
+          </div>
+          <input
+            type="text"
+            name="firstname"
+            placeholder="Имя"
+            required=""
+            class="field"
+            tabindex="0"
+          />
+        </label>
+
+        <label class="cart-input cart-input-full">
+          <div class="icon">
+            <img src="img/icons/user_icon.svg" alt="" />
+          </div>
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Фамилия"
+            required=""
+            tabindex="0"
+          />
+        </label>
+
+        <label class="cart-input cart-input-full">
+          <div class="icon">
+            <img src="img/icons/phone_icon.svg" alt="phone" />
+          </div>
+          <input
+            type="tel"
+            name="tel"
+            placeholder="Телефон*"
+            required=""
+            class="field"
+            id="phone-mask"
+          />
+        </label>
+
+        <label class="cart-input cart-input-full">
+          <div class="icon">
+            <img src="img/icons/comment_icon.svg" alt="comment" />
+          </div>
+          <textarea
+            type="text"
+            name="comment"
+            placeholder="Здесь вы можете указать особенности заказа, пожелания и другое"
+          ></textarea>
+        </label>
+
+        <button class="submit" type="submit">Отправить</button>
+
+        <span>
+          Нажимая на кнопку “Отправить”, вы подтверждаете свое согласие с
+          <a href="#" class="dotted">политикой конфиденциальности</a>
+        </span>
+      </form>
+    </div>
+
+    
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
       integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww=="
