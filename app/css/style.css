@@ -1132,14 +1132,16 @@ li {
   grid-column-gap: 35px;
   grid-template-areas: "image name&price count"; }
   .thanks__products__row img {
-    width: 100%;
-    height: 92px; }
+    width: 58px;
+    height: 58px;
+    padding: 17px;
+    border: 1px solid #e8e8e8; }
   @media screen and (max-width: 600px) {
     .thanks__products__row {
       grid-template-columns: 58px 1fr 0.3fr;
       column-gap: 20px; }
       .thanks__products__row img {
-        height: 58px; } }
+        padding: 0; } }
 
 .thanks__products__top p {
   font-size: 0.875rem;
@@ -1161,6 +1163,8 @@ li {
   border-bottom: 1px solid #e8e8e8;
   padding-bottom: 8px;
   margin-bottom: 35px; }
+  .thanks__products__product .price_mob {
+    display: none; }
   .thanks__products__product h2 {
     font-size: 1.125rem;
     align-self: center; }
@@ -1174,7 +1178,17 @@ li {
   @media screen and (max-width: 600px) {
     .thanks__products__product h2 {
       font-size: 12px;
-      margin: 5px 0; } }
+      margin: 5px 0;
+      line-height: 1; }
+    .thanks__products__product .price_mob {
+      display: block;
+      font-weight: 400;
+      text-align: left !important;
+      color: rgba(57, 56, 64, 0.7);
+      font-size: 18px;
+      padding-top: 5px; }
+    .thanks__products__product .thanks__products__product__price {
+      display: none; } }
 
 @media screen and (max-width: 500px) {
   .thanks__total .total-payment span {
@@ -2891,7 +2905,11 @@ li {
     color: rgba(20, 20, 20, 0.5);
     font-weight: 500;
     font-size: 16px;
-    width: 100%; }
+    width: 100%;
+    background-image: url("../img/icons/arr-down.svg");
+    background-position: 90% 45%;
+    background-repeat: no-repeat;
+    padding-right: 30px; }
   @media screen and (max-width: 768px) {
     .item__selector p {
       font-size: 12px; }
@@ -2948,7 +2966,8 @@ li {
     color: rgba(20, 20, 20, 0.5);
     font-weight: bold;
     padding-bottom: 18px;
-    border-bottom: 5px solid transparent; }
+    border-bottom: 5px solid transparent;
+    cursor: pointer; }
     .item__data__tabs li .item__data__content__item {
       display: none;
       height: 0;

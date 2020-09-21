@@ -115,6 +115,10 @@
     font-weight: 500;
     font-size: 16px;
     width: 100%;
+    background-image: url("../img/icons/arr-down.svg");
+    background-position: 90% 45%;
+    background-repeat: no-repeat;
+    padding-right: 30px;
   }
 
   @media screen and (max-width: 768px) {
@@ -195,6 +199,7 @@
     font-weight: bold;
     padding-bottom: 18px;
     border-bottom: 5px solid transparent;
+    cursor: pointer;
 
     .item__data__content__item {
       display: none;
