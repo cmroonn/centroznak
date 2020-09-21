@@ -570,7 +570,8 @@ li {
   left: 50%;
   transform: translate(-50%, 0);
   top: 390px;
-  z-index: 1; }
+  z-index: 1;
+  border-radius: 50%; }
   .product_card__showMore img {
     width: 36px;
     border-radius: 50%;
@@ -742,6 +743,12 @@ li {
   margin-bottom: 7px; }
   .footer__phone svg {
     margin-right: 10px; }
+  @media screen and (max-width: 500px) {
+    .footer__phone {
+      font-size: 14px; }
+      .footer__phone svg {
+        width: 22px;
+        height: 22px; } }
 
 .footer__logo {
   margin-bottom: 20px; }
@@ -764,6 +771,9 @@ li {
     .footer__menu {
       text-align: center;
       column-gap: 40px; } }
+  @media screen and (max-width: 500px) {
+    .footer__menu {
+      grid-template-columns: 1fr; } }
 
 .footer__payment {
   max-width: 295px;

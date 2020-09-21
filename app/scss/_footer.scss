@@ -41,6 +41,15 @@
   svg {
     margin-right: 10px;
   }
+
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
 }
 
 .footer__logo {
@@ -70,6 +79,10 @@
   @media screen and (max-width: 768px) {
     text-align: center;
     column-gap: 40px;
+  }
+
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 1fr;
   }
 }
 
