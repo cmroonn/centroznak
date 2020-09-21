@@ -371,6 +371,7 @@
     height: 20px;
     background: none;
     top: -15px;
+    touch-action: none;
     &:after {
       content: "";
       background: #393840;
