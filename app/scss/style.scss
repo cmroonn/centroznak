@@ -14,6 +14,8 @@
 @import "blog";
 @import "item";
 @import "contacts";
+@import "quickView";
+@import "checkbox";
 
 .popular {
   background: #f8f8f8;
@@ -25,12 +27,26 @@
   &.swiper-button-disabled {
     opacity: 0.3;
   }
+
+  @media screen and (max-width: 500px) {
+    width: 32px;
+    padding: 0 2px;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .popular__heading_row {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 500px) {
+    .section_heading {
+      max-width: 185px;
+    }
+  }
 }
 
 .popular__carousel {
@@ -53,6 +69,10 @@
   width: 100%;
   margin-left: 65px;
   max-width: 1050px;
+
+  @media screen and (max-width: 1350px) {
+    margin: auto;
+  }
 }
 
 .category_list {
@@ -69,6 +89,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+    position: relative;
 
     &:last-child {
       margin-bottom: 0;
@@ -99,7 +120,32 @@
         }
       }
     }
+
+    &:hover {
+      .category_list__submenu {
+        transform: scale(1);
+        transition: 0.2s;
+        opacity: 1;
+        right: -101%;
+        z-index: 2;
+      }
+    }
   }
+
+  @media screen and (max-width: 1350px) {
+    display: none;
+  }
+}
+
+.category_list__submenu {
+  position: absolute;
+  top: -1px;
+  right: -50%;
+  width: 352px;
+  z-index: -1;
+  transform: scale(0.5);
+  transition: 0.2s;
+  opacity: 0;
 }
 
 .main-screen__slide {
@@ -154,6 +200,27 @@
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 22px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    a {
+      font-size: 12px;
+      min-width: 150px;
+      height: 40px;
+      width: fit-content;
+    }
+  }
 }
 
 .main-screen__slider__nav {
@@ -176,6 +243,20 @@
   img {
     width: 100%;
   }
+
+  @media screen and (max-width: 1070px) {
+    max-width: 400px;
+    margin-left: auto;
+    img {
+      width: 80%;
+      margin-left: auto;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
 
 .main-screen__pagination {
@@ -194,10 +275,14 @@
 
 .content {
   margin: 85px 0;
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+    margin-top: 30px;
+  }
 }
 
 .content__heading {
-  font-size: 2.25rem;
+  font-size: 2.25em;
   color: #393840;
   margin: 0 0 20px 0;
 }

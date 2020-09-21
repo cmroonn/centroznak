@@ -2,6 +2,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 14px;
+
+  @media screen and (max-width: 1380px) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 14px;
+  }
+
+  @media screen and (max-width: 1110px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .videos__video {
@@ -37,6 +46,16 @@
     &:after {
       opacity: 1;
       transition: 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    height: 190px;
+    button {
+      img {
+        width: 35px;
+        height: 35px;
+      }
     }
   }
 }

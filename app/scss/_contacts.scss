@@ -1,5 +1,13 @@
 .contacts {
   margin: 110px 0;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+  }
 }
 
 .contacts__wrapper {
@@ -7,6 +15,14 @@
   grid-template-columns: 1fr 0.9fr;
   column-gap: 80px;
   align-items: center;
+
+  @media screen and (max-width: 1350px) {
+    grid-template-columns: 0.5fr 1fr;
+  }
+
+  @media screen and (max-width: 1170px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contacts__point {
@@ -19,12 +35,20 @@
   svg {
     margin-right: 10px;
   }
+
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+  }
 }
 
 .contacts__row {
   display: flex;
   justify-content: space-between;
   max-width: 400px;
+
+  @media screen and (max-width: 390px) {
+    flex-direction: column;
+  }
 }
 
 .contacts__content {
@@ -40,6 +64,10 @@
     height: 1px;
     margin: 25px 0;
   }
+
+  @media screen and (max-width: 1170px) {
+    max-width: 600px;
+  }
 }
 
 .contacts__map {
@@ -51,6 +79,26 @@
     transition: none;
     -webkit-box-shadow: 30px 30px 60px rgba(75, 85, 116, 0.2);
     box-shadow: 30px 30px 60px rgba(75, 85, 116, 0.2);
+  }
+
+  @media screen and (max-width: 1350px) {
+    #map {
+      width: 600px;
+      height: 400px;
+    }
+  }
+
+  @media screen and (max-width: 1170px) {
+    margin-bottom: 70px;
+    #map {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #map {
+      height: 200px;
+    }
   }
 }
 

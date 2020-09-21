@@ -1,0 +1,35 @@
+.checkbox {
+  display: flex;
+
+  span {
+    position: relative;
+    padding-left: 30px;
+    &:before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      border: 2px solid #d3d3d3;
+      border-radius: 4px;
+      position: absolute;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  input:checked + span:before {
+    background-image: url("../img/icons/tick_icon.svg");
+    background-color: #393840;
+    border-color: #393840;
+  }
+
+  &:hover {
+    span:before {
+      background-image: url("../img/icons/tick_icon2.svg");
+    }
+  }
+}

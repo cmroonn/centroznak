@@ -20,6 +20,56 @@
     <main class="main">
       <header class="header">
         <div class="container">
+          <!-- Header top line-->
+          <div class="header_wrap header_wrap__top">
+            <select name="city" class="header__city">
+              <option value="Москва">Москва</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Киев">Киев</option>
+            </select>
+
+            <a href="tel:8(499)394-39-31" class="d-flex header__phone">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0"
+                  mask-type="alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="22"
+                  height="22"
+                >
+                  <rect width="22" height="22" fill="#C4C4C4" />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5 2.96078C5 1.87787 5.8687 1 6.9403 1H16.0597C17.1313 1 18 1.87787 18 2.96078V19.0392C18 20.1221 17.1313 21 16.0597 21H6.9403C5.8687 21 5 20.1221 5 19.0392V2.96078ZM6.9403 1.98039C6.4045 1.98039 5.97015 2.41933 5.97015 2.96078V19.0392C5.97015 19.5807 6.4045 20.0196 6.9403 20.0196H16.0597C16.5955 20.0196 17.0299 19.5807 17.0299 19.0392V2.96078C17.0299 2.41933 16.5955 1.98039 16.0597 1.98039H15.7201C15.3878 2.25763 15.2242 2.82976 15.132 3.47468C15.0592 3.98359 14.6469 4.38235 14.1381 4.38235H8.86191C8.35309 4.38235 7.94082 3.98359 7.86804 3.47468C7.77581 2.82976 7.61215 2.25763 7.27985 1.98039H6.9403ZM8.57452 2.25133C8.70136 2.59994 8.77741 2.97917 8.82821 3.33445C8.83272 3.36596 8.84701 3.38736 8.85807 3.39764C8.86045 3.39985 8.86347 3.40196 8.86347 3.40196H14.1365C14.1365 3.40196 14.1396 3.39985 14.1419 3.39764C14.153 3.38736 14.1673 3.36596 14.1718 3.33445C14.2226 2.97917 14.2986 2.59994 14.4255 2.25133C14.4574 2.1637 14.4944 2.07251 14.5379 1.98039H8.46213C8.50559 2.07251 8.54264 2.1637 8.57452 2.25133Z"
+                    fill="#141414"
+                  />
+                  <path
+                    d="M9.75373 2.71569C9.75373 2.52618 9.90575 2.37255 10.0933 2.37255H11.6455C11.8331 2.37255 11.9851 2.52618 11.9851 2.71569C11.9851 2.9052 11.8331 3.05882 11.6455 3.05882H10.0933C9.90575 3.05882 9.75373 2.9052 9.75373 2.71569Z"
+                    fill="#141414"
+                  />
+                  <path
+                    d="M12.3731 2.71569C12.3731 2.52618 12.5252 2.37255 12.7127 2.37255C12.9002 2.37255 13.0522 2.52618 13.0522 2.71569C13.0522 2.9052 12.9002 3.05882 12.7127 3.05882C12.5252 3.05882 12.3731 2.9052 12.3731 2.71569Z"
+                    fill="#141414"
+                  />
+                </g>
+              </svg>
+
+              8(499)394-39-31
+            </a>
+          </div>
+
+          <!-- Header desk -->
           <div class="header_wrap">
             <a href="#" class="d-flex ai-center header__logo">
               <img src="img/logo.png" alt="" />
@@ -122,6 +172,48 @@
             </a>
           </div>
         </div>
+
+        <!-- Navigation mob -->
+        <div class="header_wrap header_wrap__nav">
+          <div class="container">
+            <ul class="header__menu">
+              <li>
+                <a href="#" class="header_menu_point">
+                  Каталог
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.21507 5.10742L5.10753 9.21496L1 5.10742"
+                      stroke="#141414"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="header_menu_point"> Новинки </a>
+              </li>
+
+              <li>
+                <a href="#" class="header_menu_point"> Акции </a>
+              </li>
+
+              <li>
+                <a href="#" class="header_menu_point"> Блог </a>
+              </li>
+
+              <li>
+                <a href="#" class="header_menu_point"> Контакты </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </header>
 
       <!-- breadcrumbs -->
@@ -136,7 +228,7 @@
       </div>
 
       <div class="catalog">
-        <div class="container">
+        <div class="container catalog__heading_block__wrap">
           <div
             class="catalog__heading_block"
             style="background-image: url('img/catalog.png')"
@@ -155,6 +247,9 @@
               явлений.
             </p>
           </div>
+        </div>
+
+        <div class="container">
           <!-- control panel -->
           <section class="catalog__control-panel">
             <!-- count items to show -->
@@ -174,11 +269,46 @@
               </ul>
             </div>
 
-            <!-- sort items by -->
-            <div class="catalog__control-panel__sort">
-              Сортировать:
+            <div class="d-flex ai-center">
+              <!-- sort items by -->
+              <div class="catalog__control-panel__sort">
+                Сортировать:
 
-              <div class="select_head">По умолчанию</div>
+                <select>
+                  <option value="По умолчанию">по умолчанию</option>
+
+                  <option value="По цене">по цене</option>
+                </select>
+              </div>
+
+              <button class="catalog__control-panel__reset">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <rect width="18" height="18" fill="url(#pattern0)" />
+                  <defs>
+                    <pattern
+                      id="pattern0"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use xlink:href="#image0" transform="scale(0.002)" />
+                    </pattern>
+                    <image
+                      id="image0"
+                      width="500"
+                      height="500"
+                      xlink:href="data:image/png;base64,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"
+                    />
+                  </defs>
+                </svg>
+              </button>
             </div>
           </section>
 
@@ -186,6 +316,9 @@
           <section class="catalog__content">
             <!-- filters -->
             <div class="catalog__content__filters">
+              <button type="button" class="catalog__btnFilters">
+                Закрыть
+              </button>
               <!-- active filters -->
               <div class="catalog__content__filters__active">
                 <div class="active_filter">
@@ -308,25 +441,25 @@
                 </p>
 
                 <div class="filter_block__points">
-                  <label class="filter_block__point">
+                  <label class="checkbox filter_block__point">
                     <input type="checkbox" name="size" />
 
                     <span> 10-20 см </span>
                   </label>
 
-                  <label class="filter_block__point">
+                  <label class="checkbox filter_block__point">
                     <input type="checkbox" name="size" />
 
                     <span> 10-20 см </span>
                   </label>
 
-                  <label class="filter_block__point">
+                  <label class="checkbox filter_block__point">
                     <input type="checkbox" name="size" />
 
                     <span> 10-20 см </span>
                   </label>
 
-                  <label class="filter_block__point">
+                  <label class="checkbox filter_block__point">
                     <input type="checkbox" name="size" />
 
                     <span> 10-20 см </span>
@@ -373,25 +506,25 @@
                 </p>
 
                 <div class="filter_block__points">
-                  <label class="filter_block__point">
+                  <label class="checkbox filter_block__point">
                     <input type="checkbox" name="size" />
 
                     <span> 10-20 см </span>
                   </label>
 
-                  <label class="filter_block__point">
+                  <label class="checkbox filter_block__point">
                     <input type="checkbox" name="size" />
 
                     <span> 10-20 см </span>
                   </label>
 
-                  <label class="filter_block__point">
+                  <label class="checkbox filter_block__point">
                     <input type="checkbox" name="size" />
 
                     <span> 10-20 см </span>
                   </label>
 
-                  <label class="filter_block__point">
+                  <label class="checkbox filter_block__point">
                     <input type="checkbox" name="size" />
 
                     <span> 10-20 см </span>
@@ -438,25 +571,25 @@
                 </p>
 
                 <div class="filter_block__points">
-                  <label class="filter_block__point">
+                  <label class="checkbox filter_block__point">
                     <input type="checkbox" name="size" />
 
                     <span> 10-20 см </span>
                   </label>
 
-                  <label class="filter_block__point">
+                  <label class="checkbox filter_block__point">
                     <input type="checkbox" name="size" />
 
                     <span> 10-20 см </span>
                   </label>
 
-                  <label class="filter_block__point">
+                  <label class="checkbox filter_block__point">
                     <input type="checkbox" name="size" />
 
                     <span> 10-20 см </span>
                   </label>
 
-                  <label class="filter_block__point">
+                  <label class="checkbox filter_block__point">
                     <input type="checkbox" name="size" />
 
                     <span> 10-20 см </span>
@@ -467,9 +600,35 @@
 
             <!-- products -->
             <div class="catalog__content__prods">
+              <button type="button" class="catalog__btnFilters">
+                <svg
+                  width="8"
+                  height="6"
+                  viewBox="0 0 8 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.60356 0.138673C3.79227 0.32357 3.79227 0.623347 3.60356 0.808244L1.84989 2.52655L7.5168 2.5266C7.78367 2.5266 8 2.73858 8 3.00006C8 3.26154 7.78366 3.47352 7.51679 3.47351L1.84991 3.47347L3.60356 5.19176C3.79227 5.37665 3.79227 5.67643 3.60356 5.86133C3.41486 6.04622 3.10892 6.04622 2.92021 5.86133L0 3L2.92021 0.138673C3.10892 -0.0462242 3.41486 -0.0462242 3.60356 0.138673Z"
+                    fill="#393840"
+                  />
+                </svg>
+
+                Открыть фильтры
+              </button>
               <div class="catalog__content__prods_wrap">
                 <div class="product_card">
-                  <img src="img/item.png" alt="" />
+                  <div class="product_card__preview">
+                    <a href="#">
+                      <img src="img/item.png" alt="" />
+                    </a>
+
+                    <a href="#">
+                      <img src="img/item-2.png" alt="" />
+                    </a>
+                  </div>
 
                   <h4 class="text-center">
                     Знак с внутренней подсветкой 5.19.1-5.19.2 “Пешеходный
@@ -504,7 +663,15 @@
                 </div>
 
                 <div class="product_card">
-                  <img src="img/item.png" alt="" />
+                  <div class="product_card__preview">
+                    <a href="#">
+                      <img src="img/item.png" alt="" />
+                    </a>
+
+                    <a href="#">
+                      <img src="img/item-2.png" alt="" />
+                    </a>
+                  </div>
 
                   <h4 class="text-center">
                     Знак с внутренней подсветкой 5.19.1-5.19.2 “Пешеходный
@@ -537,9 +704,16 @@
                     В корзину
                   </button>
                 </div>
-
                 <div class="product_card">
-                  <img src="img/item.png" alt="" />
+                  <div class="product_card__preview">
+                    <a href="#">
+                      <img src="img/item.png" alt="" />
+                    </a>
+
+                    <a href="#">
+                      <img src="img/item-2.png" alt="" />
+                    </a>
+                  </div>
 
                   <h4 class="text-center">
                     Знак с внутренней подсветкой 5.19.1-5.19.2 “Пешеходный
@@ -572,9 +746,16 @@
                     В корзину
                   </button>
                 </div>
-
                 <div class="product_card">
-                  <img src="img/item.png" alt="" />
+                  <div class="product_card__preview">
+                    <a href="#">
+                      <img src="img/item.png" alt="" />
+                    </a>
+
+                    <a href="#">
+                      <img src="img/item-2.png" alt="" />
+                    </a>
+                  </div>
 
                   <h4 class="text-center">
                     Знак с внутренней подсветкой 5.19.1-5.19.2 “Пешеходный
@@ -607,9 +788,16 @@
                     В корзину
                   </button>
                 </div>
-
                 <div class="product_card">
-                  <img src="img/item.png" alt="" />
+                  <div class="product_card__preview">
+                    <a href="#">
+                      <img src="img/item.png" alt="" />
+                    </a>
+
+                    <a href="#">
+                      <img src="img/item-2.png" alt="" />
+                    </a>
+                  </div>
 
                   <h4 class="text-center">
                     Знак с внутренней подсветкой 5.19.1-5.19.2 “Пешеходный
@@ -642,9 +830,76 @@
                     В корзину
                   </button>
                 </div>
-
                 <div class="product_card">
-                  <img src="img/item.png" alt="" />
+                  <div class="product_card__preview">
+                    <a href="#">
+                      <img src="img/item.png" alt="" />
+                    </a>
+
+                    <a href="#">
+                      <img src="img/item-2.png" alt="" />
+                    </a>
+                  </div>
+
+                  <h4 class="text-center">
+                    Знак с внутренней подсветкой 5.19.1-5.19.2 “Пешеходный
+                    переход”
+                  </h4>
+
+                  <div class="product_card__price">
+                    16.000 – 28.750
+                    <span class="currency"> ₽ </span>
+                  </div>
+
+                  <p class="product_card__desc">
+                    Рамка знака: оцинкованная сталь 0.8 мм Лицевая сторона : МПК
+                    8 мм, оклеина пленкой Пленка: флуоресцентный кант тип В,
+                    маска тип Б или В Напряжение: 12, 220 В Рамка знака:
+                    оцинкованная сталь 0.8 мм Лицевая сторона : МПК 8 мм,
+                    оклеина пленкой Пленка: флуоресцентный кант тип В, маска тип
+                    Б или В Напряжение: 12, 220 В Рамка знака: оцинкованная
+                    сталь 0.8 мм Лицевая сторона : МПК 8 мм, оклеина пленкой
+                    Напряжение: 12, 220 Напряжение: 12, 220 В Рамка знака:
+                    оцинкованная сталь 0.8 мм Лицевая сторона : МПК 8 мм,
+                    оклеина пленкой
+                  </p>
+
+                  <button type="button" class="product_card__showMore">
+                    <img src="img/show_more.svg" alt="" />
+                  </button>
+
+                  <button type="button" class="product_card__btn">
+                    В корзину
+                  </button>
+                </div>
+                <div class="product_card">
+                  <!-- tags -->
+                  <div class="product_card__tags">
+                    <div
+                      class="product_card__tags__new product_card__tags__item"
+                    >
+                      New
+                    </div>
+
+                    <div
+                      class="product_card__tags__sale product_card__tags__item"
+                    >
+                      -50%
+                    </div>
+                  </div>
+
+                  <!-- preview -->
+                  <div class="product_card__preview">
+                    <!-- default img -->
+                    <a href="#">
+                      <img src="img/item.png" alt="" />
+                    </a>
+
+                    <!-- hover img -->
+                    <a href="#">
+                      <img src="img/item-2.png" alt="" />
+                    </a>
+                  </div>
 
                   <h4 class="text-center">
                     Знак с внутренней подсветкой 5.19.1-5.19.2 “Пешеходный
@@ -678,6 +933,96 @@
                   </button>
                 </div>
               </div>
+
+              <ul class="catalog__content__prods__pagination">
+                <!-- prev page -->
+                <li>
+                  <a href="#">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0"
+                        mask-type="alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="18"
+                        height="18"
+                      >
+                        <rect width="18" height="18" fill="#C4C4C4" />
+                      </mask>
+                      <g mask="url(#mask0)">
+                        <path
+                          d="M1.92905 9.07095L16.0711 9.07107M1.92905 9.07095L7.26541 3.73459M1.92905 9.07095L7.26541 14.4073"
+                          stroke="#434343"
+                          stroke-linecap="round"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="active">
+                  <a href="#"> 1 </a>
+                </li>
+
+                <li>
+                  <a href="#"> 2 </a>
+                </li>
+
+                <li>
+                  <a href="#"> 3 </a>
+                </li>
+
+                <!-- space -->
+                <li>...</li>
+
+                <li>
+                  <a href="#"> 112 </a>
+                </li>
+
+                <!-- next page -->
+                <li>
+                  <a href="#">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0"
+                        mask-type="alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="18"
+                        height="18"
+                      >
+                        <rect
+                          width="18"
+                          height="18"
+                          transform="matrix(-1 0 0 1 18 0)"
+                          fill="#C4C4C4"
+                        />
+                      </mask>
+                      <g mask="url(#mask0)">
+                        <path
+                          d="M16.0709 9.07095L1.92893 9.07107M16.0709 9.07095L10.7346 3.73459M16.0709 9.07095L10.7346 14.4073"
+                          stroke="#434343"
+                          stroke-linecap="round"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </section>
 
@@ -963,12 +1308,179 @@
       </footer>
     </main>
 
+    <div class="popup quick_view">
+      <div class="quick_view_wrapper">
+        <button type="button" class="popup__close_btn">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.3">
+              <path
+                d="M13.4645 10.8787C14.1785 11.5927 14.1785 12.7504 13.4645 13.4645C12.7504 14.1785 11.5927 14.1785 10.8787 13.4645L0.535534 3.12132C-0.178511 2.40728 -0.178511 1.24958 0.535534 0.535534C1.24958 -0.178511 2.40728 -0.178511 3.12132 0.535534L13.4645 10.8787Z"
+                fill="#434343"
+              />
+              <path
+                d="M3.12132 13.4645C2.40727 14.1785 1.24958 14.1785 0.535534 13.4645C-0.178511 12.7504 -0.178511 11.5927 0.535534 10.8787L10.8787 0.535535C11.5927 -0.17851 12.7504 -0.178511 13.4645 0.535535C14.1785 1.24958 14.1785 2.40728 13.4645 3.12132L3.12132 13.4645Z"
+                fill="#434343"
+              />
+            </g>
+          </svg>
+        </button>
+        <div class="item__main">
+          <div class="d-flex item__preview">
+            <div class="item__preview__big">
+              <img src="img/item.png" alt="" />
+            </div>
+
+            <div class="item__preview__minis">
+              <div class="item__preview__mini">
+                <img src="img/item-2.png" alt="" />
+              </div>
+
+              <div class="item__preview__mini">
+                <img src="img/item-3.png" alt="" />
+              </div>
+
+              <div class="item__preview__mini">
+                <img src="img/item-2.png" alt="" />
+              </div>
+            </div>
+
+            <div class="item__preview__mob swiper-container">
+              <div class="swiper-wrapper">
+                <!-- SLIDE -->
+                <div class="swiper-slide">
+                  <div class="item__preview__mob__img">
+                    <img src="img/item-2.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item__preview__mob__img">
+                    <img src="img/item-3.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item__preview__mob__img">
+                    <img src="img/item-2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="item__preview__pagination"></div>
+            </div>
+          </div>
+
+          <div class="item__main__content">
+            <h1>
+              Знак с внутренней подсветкой 5.19.1-5.19.2 “Пешеходный переход”
+            </h1>
+
+            <p>
+              Оливковое масло, Морковь, лук, кукурудза, перец халапеньо, морская
+              соль, гранулированный чеснок
+            </p>
+
+            <div class="item__selectors">
+              <div class="item__selector">
+                <p>Тип размер</p>
+
+                <select name="size">
+                  <option value="1-й">1-й</option>
+                  <option value="2-й">2-й</option>
+                </select>
+              </div>
+
+              <div class="item__selector">
+                <p>Тип пленки</p>
+
+                <select name="size">
+                  <option value="А">А</option>
+                  <option value="Б">Б</option>
+                </select>
+              </div>
+
+              <div class="item__selector">
+                <p>Яркость</p>
+
+                <select name="size">
+                  <option value="Эконом">Эконом</option>
+                  <option value="Эконом">Эконом</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="item__info_row">
+              <div class="product_card__price">
+                16.000 <span class="currency">₽</span>
+              </div>
+
+              <div class="d-flex ai-center">
+                <div class="count-block">
+                  <span class="minusCount">
+                    <img src="img/icons/remove.svg" alt="remove" />
+                  </span>
+
+                  <input class="count" type="num" value="1" />
+
+                  <span class="plusCount">
+                    <img src="img/icons/add_icon.svg" alt="add" />
+                  </span>
+                </div>
+
+                <button type="button" class="d-flex ai-center jc-center">
+                  В корзину
+                </button>
+              </div>
+            </div>
+
+            <ul class="item__points">
+              <li>
+                Артикул
+
+                <span> Н/Д </span>
+              </li>
+              <li>
+                Категория
+
+                <span> Светодиодные знаки </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
       integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww=="
       crossorigin="anonymous"
     ></script>
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+      $(function () {
+        $("#slider-range").slider({
+          range: true,
+          min: 0,
+          max: 500,
+          values: [75, 300],
+          slide: function (event, ui) {
+            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+          },
+        });
+        $("#amount").val(
+          "$" +
+            $("#slider-range").slider("values", 0) +
+            " - $" +
+            $("#slider-range").slider("values", 1)
+        );
+      });
+    </script>
   </body>
 </html>

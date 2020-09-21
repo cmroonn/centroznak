@@ -34,6 +34,8 @@
     text-align: center;
     width: 100%;
     transition: 0.2s;
+    padding: 0 5px;
+    box-sizing: border-box;
   }
   &:last-child {
     margin-right: 0;
@@ -67,11 +69,31 @@
       transition: 0.2s;
     }
   }
+
+  @media screen and (max-width: 1300px) {
+    flex: unset;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    height: 265px;
+  }
+
+  @media screen and (max-width: 420px) {
+    font-size: 18px;
+  }
 }
 
 .categories__row {
   display: flex;
   margin-bottom: 14px;
+
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 }
 
 .categories__heading {

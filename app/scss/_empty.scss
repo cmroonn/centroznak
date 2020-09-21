@@ -1,5 +1,5 @@
 .empty__heading {
-  font-size: 2.25rem;
+  font-size: 2.25em;
   text-align: center;
   margin: 0 0 10px 0;
 }
@@ -44,6 +44,10 @@
 
 .empty {
   margin: 120px 0;
+
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+  }
 }
 .empty__img {
   margin-bottom: 40px;

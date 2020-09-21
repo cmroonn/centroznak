@@ -1,0 +1,40 @@
+.popup {
+  background: rgba(57, 56, 64, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  overflow: auto;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  &.show {
+    display: flex;
+  }
+}
+
+.popup__close_btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.quick_view_wrapper {
+  background: white;
+  padding: 100px 30px;
+  overflow: auto;
+  width: 95%;
+  position: relative;
+
+  .item__main__content {
+    @media screen and (max-width: 1500px) {
+      margin-left: 30px;
+    }
+  }
+}

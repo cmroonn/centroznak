@@ -13,6 +13,18 @@
     line-height: 1;
     margin-left: 15px;
   }
+
+  @media screen and (max-width: 500px) {
+    font-size: 10px;
+    margin-right: 10px;
+    img {
+      width: 42px;
+    }
+
+    p {
+      max-width: 95px;
+    }
+  }
 }
 
 .header__menu {
@@ -73,8 +85,93 @@
   align-items: center;
   font-size: 18px;
 
+  &.header_wrap__top,
+  &.header_wrap__nav {
+    display: none;
+  }
+
   @media screen and (max-width: 1450px) {
     font-size: 16px;
+  }
+
+  @media screen and (max-width: 1412px) {
+    &.header_wrap__top {
+      display: flex;
+      padding: 10px 0;
+      justify-content: space-between;
+    }
+
+    &:nth-child(2) {
+      .header__city,
+      .header__phone {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &:nth-child(2) {
+      .header__menu {
+        display: none;
+      }
+    }
+
+    &.header_wrap__nav {
+      display: flex;
+
+      .header__menu {
+        display: flex;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+  }
+}
+
+.header_wrap__nav {
+  background: #f8f8f8;
+  border-top: 1px solid rgba(233, 233, 233, 1);
+  border-bottom: 1px solid rgba(233, 233, 233, 1);
+  overflow-x: auto;
+  position: relative;
+  .container {
+    overflow: auto;
+  }
+  .header__menu {
+    justify-content: start;
+    overflow: auto;
+    padding: 10px 0;
+    li {
+      .header_menu_point {
+        position: relative;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        height: auto;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &:after {
+    content: "";
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 15.63%,
+      rgba(248, 248, 248, 0) 100%
+    );
   }
 }
 
@@ -89,6 +186,12 @@
   font-weight: 500;
   font-size: 0.889em;
   margin-right: 25px;
+
+  @media screen and (max-width: 500px) {
+    width: 114px;
+    height: 21px;
+    padding: 3px 14px;
+  }
 }
 
 .header__phone {
@@ -97,6 +200,15 @@
 
   svg {
     margin-right: 9px;
+  }
+
+  @media screen and (max-width: 500px) {
+    align-items: center;
+
+    svg {
+      height: 18px;
+      width: 18px;
+    }
   }
 }
 

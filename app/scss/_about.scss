@@ -24,6 +24,10 @@
       display: none;
     }
   }
+
+  @media screen and (max-width: 1070px) {
+    display: none;
+  }
 }
 
 .about__heading {
@@ -60,14 +64,24 @@
 
 .about_page {
   margin-top: 60px;
+  font-size: 16px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+    margin-top: 30px;
+  }
 }
 
 .about_page__block {
-  font-size: 16px;
   margin-bottom: 30px;
   h2 {
     font-size: 2.25em;
     margin: 0 0 15px 0;
+    line-height: 1;
+
+    @media screen and (max-width: 500px) {
+      font-size: 1.833em;
+    }
   }
 
   p {
@@ -103,4 +117,10 @@
   grid-template-columns: 1fr 1fr;
   max-width: 640px;
   column-gap: 50px;
+
+  @media screen and (max-width: 768px) {
+    max-width: unset;
+    column-gap: unset;
+    grid-template-columns: 1fr;
+  }
 }

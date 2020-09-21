@@ -1,70 +1,105 @@
 .thanks {
   padding-top: 56px;
-  margin-bottom: 65px; }
+  margin-bottom: 65px;
+}
 
 .thanks__text {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin: auto;
-  text-align: center; }
-  .thanks__text h1 {
+  text-align: center;
+
+  h1 {
     font-size: 2.25rem;
     margin: 21px 0 36px;
     max-width: 590px;
-    line-height: 1; }
-  .thanks__text p {
+    line-height: 1;
+  }
+
+  p {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 300;
     max-width: 785px;
     line-height: 1;
-    margin: 0; }
+    margin: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 22px;
+      max-width: 280px;
+      margin: 20px auto;
+    }
+
+    p {
+      font-size: 12px;
+      max-width: 280px;
+      margin: auto;
+    }
+  }
+}
 
 .thanks__info__order_number {
   font-weight: 500;
-  font-size: 1.375rem; }
-  .thanks__info__order_number span {
+  font-size: 1.375rem;
+
+  span {
     font-size: 2.25rem;
-    font-weight: 200; }
+    font-weight: 200;
+  }
+}
 
 .thanks__info {
-  margin-top: 70px; }
+  margin-top: 70px;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 40px;
+  }
+}
 
 .thanks__info__main {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end; }
+  align-items: flex-end;
 
-.thanks__info__main__date span {
-  font-weight: 300;
-  font-size: 1.125rem;
-  margin-right: 35px; }
-  .thanks__info__main__date span:last-child {
-    margin-right: 0; }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+
+    .thanks__info__order_number {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 10px;
+      span {
+        font-size: 22px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.thanks__info__main__date {
+  span {
+    font-weight: 300;
+    font-size: 1.125rem;
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    span {
+      font-size: 14px;
+    }
+  }
+}
 
 .thanks__info__data {
   margin-top: 10px;
@@ -74,11 +109,17 @@
   display: grid;
   font-size: 14px;
   grid-template-columns: 1.5fr 1fr 1fr;
-  grid-row-gap: 15px; }
-  .thanks__info__data p {
+  grid-row-gap: 15px;
+
+  p {
     margin: 0;
     font-size: 1em;
     font-weight: 300;
+
+    span {
+      font-weight: 500;
+    }
+
     /*
     &:nth-child(2n) {
       text-align: center;
@@ -86,49 +127,143 @@
 
     &:nth-child(2n + 1) {
       text-align: center;
-    } */ }
-    .thanks__info__data p span {
-      font-weight: 500; }
-    .thanks__info__data p:nth-child(3n) {
-      text-align: right; }
-    .thanks__info__data p:nth-child(3n + 1) {
-      text-align: left; }
+    } */
+
+    &:nth-child(3n) {
+      text-align: right;
+    }
+
+    &:nth-child(3n + 1) {
+      text-align: left;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: unset;
+
+    p {
+      &:nth-child(3n) {
+        text-align: left;
+      }
+
+      &:nth-child(3n + 1) {
+        text-align: left;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    p {
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      span {
+        text-align: left;
+        display: inline-block;
+      }
+    }
+  }
+}
 
 .thanks__products {
   display: grid;
-  margin-top: 65px; }
+  margin-top: 65px;
+}
 
 .thanks__products__row {
   display: grid;
   grid-template-columns: 92px 3fr 0.5fr 0.5fr;
-  grid-column-gap: 35px; }
-  .thanks__products__row img {
-    width: 100%;
-    height: 92px; }
+  grid-column-gap: 35px;
+  grid-template-areas: "image name&price count";
 
-.thanks__products__top p {
-  font-size: 0.875rem;
-  color: #9e9e9e; }
-  .thanks__products__top p:nth-child(3) {
-    text-align: center; }
-  .thanks__products__top p:last-child {
-    text-align: right; }
+  img {
+    width: 100%;
+    height: 92px;
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 58px 1fr 0.3fr;
+    column-gap: 20px;
+
+    img {
+      height: 58px;
+    }
+  }
+}
+
+.thanks__products__top {
+  p {
+    font-size: 0.875rem;
+    color: rgb(158, 158, 158);
+
+    &:nth-child(3) {
+      text-align: center;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .price_desk {
+    display: none;
+  }
+}
 
 .thanks__products__product {
   border-bottom: 1px solid #e8e8e8;
   padding-bottom: 8px;
-  margin-bottom: 35px; }
-  .thanks__products__product h2 {
+  margin-bottom: 35px;
+  h2 {
     font-size: 1.125rem;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center; }
-  .thanks__products__product span {
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
     align-self: center;
-    font-size: 1.125rem; }
-    .thanks__products__product span:nth-child(3) {
-      text-align: center; }
-    .thanks__products__product span:last-child {
-      text-align: right; }
+  }
+
+  span {
+    align-self: center;
+    font-size: 1.125rem;
+
+    &:nth-child(3) {
+      text-align: center;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    h2 {
+      font-size: 12px;
+      margin: 5px 0;
+    }
+  }
+}
+
+.thanks__total {
+  @media screen and (max-width: 500px) {
+    .total-payment {
+      span {
+        font-size: 10px;
+      }
+
+      .total-payment-price {
+        font-size: 22px;
+
+        span {
+          font-size: 16px;
+        }
+      }
+
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}
