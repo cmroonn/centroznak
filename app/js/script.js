@@ -225,4 +225,25 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  {
+    const allPopup = document.querySelectorAll(".popup");
+    const allCloseButtons = document.querySelectorAll(".closePopup");
+    allPopup.forEach((popup) => {
+      popup.addEventListener("click", (e) => {
+        e.target === popup ? popup.classList.remove("show") : false;
+      });
+    });
+
+    allCloseButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        btn.closest(".popup").classList.remove("show");
+      });
+    });
+
+    const openOrderPopup = document.getElementById("orderCallOpen");
+    openOrderPopup.addEventListener("click", () => {
+      document.querySelector(".order_call").classList.add("show");
+    });
+  }
 });

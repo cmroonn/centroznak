@@ -291,3 +291,69 @@
   line-height: 200%;
   margin-bottom: 30px;
 }
+
+.order_call__wrapper {
+  padding: 55px 36px;
+  background: white;
+  position: relative;
+  max-width: 380px;
+  box-sizing: border-box;
+
+  .cart-input {
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+    color: #434343;
+  }
+
+  p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1;
+    margin: 10px auto 20px;
+    font-weight: 300;
+    max-width: 250px;
+    color: #434343;
+  }
+
+  button.submit {
+    background: rgba(20, 20, 20, 0.8);
+    border-radius: 250px;
+    width: 174px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 25px auto 10px;
+    color: white;
+  }
+
+  span {
+    font-size: 12px;
+    max-width: 205px;
+    margin: auto;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: block;
+
+    a {
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.5);
+      margin: auto;
+    }
+  }
+}
+
+.order_call__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
