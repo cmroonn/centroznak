@@ -14,6 +14,10 @@
       integrity="sha512-uCQmAoax6aJTxC03VlH0uCEtE0iLi83TW1Qh6VezEZ5Y17rTrIE+8irz4H4ehM7Fbfbm8rb30OkxVkuwhXxrRg=="
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -316,9 +320,7 @@
           <section class="catalog__content">
             <!-- filters -->
             <div class="catalog__content__filters">
-              <button type="button" class="catalog__btnFilters">
-                Закрыть
-              </button>
+              <button type="button" class="catalog__btnFilters">Закрыть</button>
               <!-- active filters -->
               <div class="catalog__content__filters__active">
                 <div class="active_filter">
@@ -464,6 +466,57 @@
 
                     <span> 10-20 см </span>
                   </label>
+                </div>
+              </div>
+
+              <div class="filter_block">
+                <p class="d-flex ai-center jc-between filter_block__heading">
+                  Цена
+
+                  <svg
+                    class="close_icon"
+                    width="12"
+                    height="4"
+                    viewBox="0 0 12 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.5"
+                      d="M10.8 0.799805C11.4627 0.799805 12 1.33706 12 1.9998C12 2.66255 11.4627 3.19981 10.8 3.19981L1.2 3.1998C0.537259 3.1998 -2.80979e-08 2.66255 0 1.9998C2.80979e-08 1.33706 0.537258 0.799805 1.2 0.799805L10.8 0.799805Z"
+                      fill="#434343"
+                    ></path>
+                  </svg>
+
+                  <svg
+                    class="open_icon"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.8 4.8C11.4627 4.8 12 5.33726 12 6C12 6.66274 11.4627 7.2 10.8 7.2L1.2 7.2C0.537259 7.2 -2.80979e-08 6.66274 0 6C2.80979e-08 5.33726 0.537258 4.8 1.2 4.8L10.8 4.8Z"
+                      fill="#434343"
+                    ></path>
+                    <path
+                      d="M7.2 10.8C7.2 11.4627 6.66274 12 6 12C5.33726 12 4.8 11.4627 4.8 10.8L4.8 1.2C4.8 0.537259 5.33726 -5.61958e-08 6 0C6.66274 5.61958e-08 7.2 0.537258 7.2 1.2L7.2 10.8Z"
+                      fill="#434343"
+                    ></path>
+                  </svg>
+                </p>
+
+                <div class="filter_block__points">
+                  <div class="filter_block__slider">
+                    <div id="slider-price"></div>
+
+                    <div class="filter_block__slider__res">
+                      <input id="price-min" readonly></input>
+                      –
+                      <input id="price-max" readonly></input>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -1465,21 +1518,18 @@
 
     <script>
       $(function () {
-        $("#slider-range").slider({
+        $("#slider-price").slider({
           range: true,
           min: 0,
-          max: 500,
+          max: 1000,
           values: [75, 300],
           slide: function (event, ui) {
-            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+            $("#price-min").val(ui.values[0]);
+            $("#price-max").val(ui.values[1]);
           },
         });
-        $("#amount").val(
-          "$" +
-            $("#slider-range").slider("values", 0) +
-            " - $" +
-            $("#slider-range").slider("values", 1)
-        );
+        $("#price-min").val($("#slider-price").slider("values", 0));
+        $("#price-max").val($("#slider-price").slider("values", 1));
       });
     </script>
   </body>

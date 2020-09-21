@@ -14,6 +14,12 @@ a {
   box-sizing: border-box;
 }
 
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+}
+
 button {
   background: none;
   border: none;
