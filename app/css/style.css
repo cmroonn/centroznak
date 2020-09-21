@@ -248,12 +248,18 @@ li {
   color: rgba(20, 20, 20, 0.5);
   font-weight: 500;
   font-size: 0.889em;
-  margin-right: 25px; }
+  margin-right: 25px;
+  background-image: url("../img/icons/arr-down.svg");
+  background-position: 90% 7px;
+  background-repeat: no-repeat;
+  padding-right: 30px; }
   @media screen and (max-width: 500px) {
     .header__city {
       width: 114px;
       height: 21px;
-      padding: 3px 14px; } }
+      padding: 3px 14px;
+      padding-right: 20px;
+      background-position: 92% 3px; } }
 
 .header__phone {
   font-weight: 300;
@@ -2140,7 +2146,11 @@ li {
     margin-left: 5px;
     border-radius: 5px;
     color: white;
-    font-size: 14px; }
+    font-size: 14px;
+    background-image: url("../img/icons/arr-down-white.svg");
+    background-position: 90% 10px;
+    background-repeat: no-repeat;
+    padding-right: 30px; }
   @media screen and (max-width: 500px) {
     .catalog__control-panel__sort {
       flex-direction: column;
