@@ -519,7 +519,9 @@ li {
       .product_card img {
         max-width: 110px; }
       .product_card p {
-        top: 215px; }
+        top: 215px;
+        max-height: 220px;
+        overflow-y: auto; }
       .product_card:after {
         height: 100px; } }
 
@@ -571,7 +573,8 @@ li {
   transform: translate(-50%, 0);
   top: 390px;
   z-index: 1;
-  border-radius: 50%; }
+  border-radius: 50%;
+  padding: 0; }
   .product_card__showMore img {
     width: 36px;
     border-radius: 50%;

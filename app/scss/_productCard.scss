@@ -66,6 +66,8 @@
     }
     p {
       top: 215px;
+      max-height: 220px;
+      overflow-y: auto;
     }
     &:after {
       height: 100px;
@@ -130,6 +132,7 @@
   top: 390px;
   z-index: 1;
   border-radius: 50%;
+  padding: 0;
   img {
     width: 36px;
     border-radius: 50%;
