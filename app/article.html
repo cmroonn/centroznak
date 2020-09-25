@@ -230,7 +230,9 @@
       <section class="article">
         <div class="container">
           <div class="article__row">
-            <img src="img/category-3.jpg" alt="" />
+            <div class="article__preview">
+              <img src="img/category-3.jpg" alt="" />
+            </div>
 
             <div class="article__content">
               <p class="article__date">Май, 2020</p>
@@ -310,13 +312,16 @@
               <!-- slide -->
               <div class="swiper-slide">
                 <div class="blog_item">
-                  <img src="img/category-4.jpg" alt="" />
+                  <div class="blog_item__preview">
+                    <img src="img/category-2.jpg" alt="" />
+                    <a href="#"></a>
+                  </div>
 
                   <div class="blog_item__content">
                     <p class="blog_item__date">Май, 2020</p>
 
                     <h2 class="blog_item__heading">
-                      Лучшие решения для узких дорог
+                      <a href="#"> Лучшие решения для узких дорог </a>
                     </h2>
 
                     <p class="blog_item__desc">
@@ -334,13 +339,16 @@
               <!-- slide -->
               <div class="swiper-slide">
                 <div class="blog_item">
-                  <img src="img/category-2.jpg" alt="" />
+                  <div class="blog_item__preview">
+                    <img src="img/category-2.jpg" alt="" />
+                    <a href="#"></a>
+                  </div>
 
                   <div class="blog_item__content">
                     <p class="blog_item__date">Май, 2020</p>
 
                     <h2 class="blog_item__heading">
-                      Лучшие решения для узких дорог
+                      <a href="#"> Лучшие решения для узких дорог </a>
                     </h2>
 
                     <p class="blog_item__desc">
@@ -358,13 +366,16 @@
               <!-- slide -->
               <div class="swiper-slide">
                 <div class="blog_item">
-                  <img src="img/category-3.jpg" alt="" />
+                  <div class="blog_item__preview">
+                    <img src="img/category-3.jpg" alt="" />
+                    <a href="#"></a>
+                  </div>
 
                   <div class="blog_item__content">
                     <p class="blog_item__date">Май, 2020</p>
 
                     <h2 class="blog_item__heading">
-                      Лучшие решения для узких дорог
+                      <a href="#"> Лучшие решения для узких дорог </a>
                     </h2>
 
                     <p class="blog_item__desc">
@@ -382,13 +393,16 @@
               <!-- slide -->
               <div class="swiper-slide">
                 <div class="blog_item">
-                  <img src="img/category-5.jpg" alt="" />
+                  <div class="blog_item__preview">
+                    <img src="img/category-5.jpg" alt="" />
+                    <a href="#"></a>
+                  </div>
 
                   <div class="blog_item__content">
                     <p class="blog_item__date">Май, 2020</p>
 
                     <h2 class="blog_item__heading">
-                      Лучшие решения для узких дорог
+                      <a href="#"> Лучшие решения для узких дорог </a>
                     </h2>
 
                     <p class="blog_item__desc">
@@ -406,13 +420,16 @@
               <!-- slide -->
               <div class="swiper-slide">
                 <div class="blog_item">
-                  <img src="img/category-6.jpg" alt="" />
+                  <div class="blog_item__preview">
+                    <img src="img/category-6.jpg" alt="" />
+                    <a href="#"></a>
+                  </div>
 
                   <div class="blog_item__content">
                     <p class="blog_item__date">Май, 2020</p>
 
                     <h2 class="blog_item__heading">
-                      Лучшие решения для узких дорог
+                      <a href="#"> Лучшие решения для узких дорог </a>
                     </h2>
 
                     <p class="blog_item__desc">
@@ -657,7 +674,7 @@
     </main>
 
     <div class="popup order_call">
-      <form class="order_call__wrapper">
+      <form class="order_call__wrapper" method="post">
         <button type="button" class="order_call__close closePopup">
           <svg
             width="27"
@@ -686,14 +703,7 @@
           <div class="icon">
             <img src="img/icons/user_icon.svg" alt="user" />
           </div>
-          <input
-            type="text"
-            name="firstname"
-            placeholder="Имя"
-            required=""
-            class="field"
-            tabindex="0"
-          />
+          <input type="text" name="firstname" placeholder="Имя" tabindex="0" />
         </label>
 
         <label class="cart-input cart-input-full">
@@ -704,7 +714,6 @@
             type="text"
             name="lastname"
             placeholder="Фамилия"
-            required=""
             tabindex="0"
           />
         </label>
@@ -717,9 +726,8 @@
             type="tel"
             name="tel"
             placeholder="Телефон*"
-            required=""
             class="field"
-            id="phone-mask"
+            id="orderCall-phone-mask"
           />
         </label>
 
@@ -738,18 +746,92 @@
 
         <span>
           Нажимая на кнопку “Отправить”, вы подтверждаете свое согласие с
-          <a href="#" class="dotted">политикой конфиденциальности</a>
+          <a href="#" class="dotted callPrivacy"
+            >политикой конфиденциальности</a
+          >
         </span>
       </form>
     </div>
-    
+
+    <div class="popup privacy_policy">
+      <div class="privacy_policy__body">
+        <button type="button" class="order_call__close closePopup">
+          <svg
+            width="27"
+            height="27"
+            viewBox="0 0 27 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.3">
+              <path
+                d="M19.6082 17.0208C20.3223 17.7348 20.3223 18.8925 19.6082 19.6066C18.8942 20.3206 17.7365 20.3206 17.0225 19.6066L6.67931 9.26341C5.96526 8.54937 5.96526 7.39167 6.67931 6.67762C7.39335 5.96358 8.55105 5.96358 9.2651 6.67762L19.6082 17.0208Z"
+                fill="#434343"
+              />
+              <path
+                d="M9.2651 19.6066C8.55105 20.3206 7.39335 20.3206 6.67931 19.6066C5.96526 18.8925 5.96526 17.7348 6.67931 17.0208L17.0225 6.67762C17.7365 5.96358 18.8942 5.96358 19.6082 6.67762C20.3223 7.39167 20.3223 8.54937 19.6082 9.26341L9.2651 19.6066Z"
+                fill="#434343"
+              />
+            </g>
+          </svg>
+        </button>
+
+        <h4>Политика конфиденциальности</h4>
+
+        <p>
+          Разнообразный и богатый опыт укрепление и развитие структуры играет
+          важную роль в формировании форм развития. Равным образом рамки и место
+          обучения кадров позволяет оценить значение дальнейших направлений
+          развития. Идейные соображения высшего порядка, а также консультация с
+          широким активом требуют определения и уточнения новых предложений.
+          Идейные соображения высшего порядка, а также начало повседневной
+          работы по формированию позиции в значительной степени обуславливает
+          создание систем массового участия. Не следует, однако забывать, что
+          постоянный количественный рост и сфера нашей активности требуют
+          определения и уточнения систем массового участия. Товарищи! постоянный
+          количественный рост и сфера нашей активности требуют определения и
+          уточнения модели развития.
+        </p>
+
+        <p>
+          С другой стороны постоянное информационно-пропагандистское обеспечение
+          нашей деятельности представляет собой интересный эксперимент проверки
+          существенных финансовых и административных условий. Разнообразный и
+          богатый опыт консультация с широким активом требуют определения и
+          уточнения позиций, занимаемых участниками в отношении поставленных
+          задач. Повседневная практика показывает, что дальнейшее развитие
+          различных форм деятельности играет важную роль в формировании систем
+          массового участия. Повседневная практика показывает, что постоянный
+          количественный рост и сфера нашей активности представляет собой
+          интересный эксперимент проверки модели развития. Товарищи! дальнейшее
+          развитие различных форм деятельности играет важную роль в формировании
+          дальнейших направлений развития. Задача организации, в особенности же
+          постоянное информационно-пропагандистское обеспечение нашей
+          деятельности представляет собой интересный эксперимент проверки
+          существенных финансовых и административных условий. Таким образом
+          укрепление и развитие структуры в значительной степени обуславливает
+          создание существенных финансовых и административных условий.
+          Повседневная практика показывает, что сложившаяся структура
+          организации обеспечивает широкому кругу (специалистов) участие в
+          формировании системы обучения кадров, соответствует насущным
+          потребностям. Повседневная практика показывает, что новая модель
+          организационной деятельности способствует подготовки и реализации
+          системы обучения кадров, соответствует насущным потребностям.
+        </p>
+      </div>
+    </div>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
       integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww=="
       crossorigin="anonymous"
     ></script>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.0.5/imask.min.js"
+      integrity="sha512-0ctiD2feH7vdHZ5jjAKNYts4h+IBRq7Nm5wACMJG1Pj5AQyprSHzX/ijMm77AcLLW5cemQptH+9EcviiKCC0cQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/approvejs/3.1.2/approve.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

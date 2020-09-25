@@ -3,19 +3,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   try {
     const partnersSlider = new Swiper(".partners__slider", {
-      slidesPerView: 1,
-      centeredSlides: true,
+      slidesPerView: 2,
+      loop: true,
       navigation: {
         nextEl: ".partners__next_slide",
         prevEl: ".partners__prev_slide",
       },
+      speed: 3000,
+      autoplay: {
+        delay: 0,
+      },
 
       breakpoints: {
-        500: {
-          slidesPerView: 2,
-          centeredSlides: false,
-        },
-
         768: {
           slidesPerView: 3,
           centeredSlides: false,
@@ -39,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   try {
     const popularProds = new Swiper(".popular__carousel", {
       slidesPerView: 4,
+      allowTouchMove: false,
       navigation: {
         nextEl: ".popular__next_slide",
         prevEl: ".popular__prev_slide",
@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
   try {
     const partnersSlider = new Swiper(".main-screen__slider", {
       slidesPerView: 1,
+      loop: true,
       autoplay: {
         delay: 15000,
       },
@@ -113,6 +114,8 @@ document.addEventListener("DOMContentLoaded", () => {
   try {
     const similarArticles = new Swiper(".similar_articles__slider", {
       slidesPerView: 1,
+      spaceBetween: 15,
+      loop: true,
       navigation: {
         nextEl: ".similar_articles__next_slide",
         prevEl: ".similar_articles__prev_slide",
@@ -173,14 +176,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     allTabs.forEach((tab) => {
       tab.addEventListener("click", () => {
-        allTabs.forEach((el) => el.classList.remove("active"));
-        tab.classList.add("active");
-        const tabId = tab.dataset.tab;
-
-        allBlocks.forEach((block) => {
-          block.classList.remove("show");
-          block.dataset.tab === tabId ? block.classList.add("show") : false;
-        });
+        if (tab.classList.contains("active")) {
+          tab.classList.remove("active");
+          allBlocks.forEach((block) => {
+            block.classList.remove("show");
+          });
+        } else {
+          allTabs.forEach((el) => el.classList.remove("active"));
+          tab.classList.add("active");
+          const tabId = tab.dataset.tab;
+          allBlocks.forEach((block) => {
+            block.classList.remove("show");
+            block.dataset.tab === tabId ? block.classList.add("show") : false;
+          });
+        }
       });
     });
   } catch (e) {
@@ -233,6 +242,12 @@ document.addEventListener("DOMContentLoaded", () => {
       popup.addEventListener("click", (e) => {
         e.target === popup ? popup.classList.remove("show") : false;
       });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.keyCode === 27) {
+          popup.classList.remove("show");
+        }
+      });
     });
 
     allCloseButtons.forEach((btn) => {
@@ -245,5 +260,77 @@ document.addEventListener("DOMContentLoaded", () => {
     openOrderPopup.addEventListener("click", () => {
       document.querySelector(".order_call").classList.add("show");
     });
+  }
+
+  {
+    try {
+      const callCatalogButton = document.querySelectorAll(".callCatalog");
+      const categories = document.querySelector(".category_list__dynamic");
+      callCatalogButton.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          const posTop = btn.getBoundingClientRect().height;
+          const posLeft = btn.getBoundingClientRect().left;
+          console.log(posLeft);
+          console.log(posTop);
+          categories.style.top = posTop + "px";
+          categories.style.left = posLeft + "px";
+          categories.classList.add("active");
+        });
+      });
+
+      categories.addEventListener("mouseleave", () => {
+        categories.classList.remove("active");
+      });
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+  {
+    const privacyPopup = document.querySelectorAll(".privacy_policy");
+    const callPrivacyBtn = document.querySelectorAll(".callPrivacy");
+
+    callPrivacyBtn.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        privacyPopup.forEach((popup) => {
+          popup.classList.add("show");
+        });
+      });
+    });
+  }
+
+  try {
+    // required inputs
+    const allFields = document.querySelectorAll(".order_call .field"),
+      orderCallForm = document.querySelector(".order_call__wrapper");
+    console.log(allFields);
+    orderCallForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      allFields.forEach((field) => {
+        field.value === ""
+          ? field.closest(".cart-input").classList.add("field_error")
+          : field.closest(".cart-input").classList.remove("field_error");
+      });
+    });
+  } catch (e) {
+    console.log(e);
+  }
+
+  try {
+    const phoneMask = IMask(document.getElementById("phone-mask"), {
+      mask: "+{7}(000)000-00-00",
+    });
+  } catch (e) {
+    console.log(e);
+  }
+
+  try {
+    const orderPhone = IMask(document.getElementById("orderCall-phone-mask"), {
+      mask: "+{7}(000)000-00-00",
+    });
+  } catch (e) {
+    console.log(e);
   }
 });

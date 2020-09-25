@@ -146,7 +146,7 @@
     width: 185px;
     height: 38px;
     font-weight: 300;
-    margin-left: 5px;
+    margin-left: 22px;
     border-radius: 5px;
     color: white;
     font-size: 14px;
@@ -363,6 +363,7 @@
     background: #808080;
   }
   .ui-slider-handle {
+    cursor: pointer;
     outline: none;
     border: none;
     padding: 10px 0;

@@ -20,12 +20,22 @@
 .popular {
   background: #f8f8f8;
   padding: 75px 0;
+
+  @media screen and (max-width: 500px) {
+    padding: 20px 0;
+  }
 }
 
 .popular__next_slide,
 .popular__prev_slide {
-  &.swiper-button-disabled {
+  &:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+  }
+
+  &:active {
     opacity: 0.3;
+    transition: 0.2s;
   }
 
   @media screen and (max-width: 500px) {
@@ -148,6 +158,18 @@
   opacity: 0;
 }
 
+.category_list__dynamic {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background: white;
+  padding: 0 4px 2px;
+
+  &.active {
+    display: grid;
+  }
+}
+
 .main-screen__slide {
   display: flex;
   align-items: center;
@@ -187,6 +209,7 @@
     justify-content: center;
     color: white;
     margin-top: 25px;
+    transition: 0.2s;
 
     svg {
       margin-left: 10px;
@@ -194,10 +217,17 @@
     }
 
     &:hover {
+      opacity: 0.7;
+      transition: 0.2s;
       svg {
         transform: translate(10px, 0);
         transition: 0.2s;
       }
+    }
+
+    &:active {
+      opacity: 0.5;
+      transition: 0.2s;
     }
   }
 
@@ -233,9 +263,16 @@
   border: none;
   background: none;
   cursor: pointer;
+  transition: 0.2s;
 
-  &.swiper-button-disabled {
+  &:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+  }
+
+  &:active {
     opacity: 0.3;
+    transition: 0.2s;
   }
 }
 
@@ -317,7 +354,7 @@
     line-height: 1;
     margin: 10px auto 20px;
     font-weight: 300;
-    max-width: 250px;
+    max-width: 155px;
     color: #434343;
   }
 
@@ -333,6 +370,12 @@
     font-size: 14px;
     margin: 25px auto 10px;
     color: white;
+    transition: 0.2s;
+
+    &:hover {
+      opacity: 0.7;
+      transition: 0.2s;
+    }
   }
 
   span {
@@ -356,4 +399,38 @@
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+.closePopup {
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+}
+
+.privacy_policy__body {
+  font-size: 40px 20px;
+  padding: 20px;
+  background: white;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+
+  h4 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.75em;
+  }
+}
+
+.field_error {
+  border: 1px solid #ff5b5b !important;
+
+  &:focus {
+    border: 1px solid #ff5b5b !important;
+  }
 }

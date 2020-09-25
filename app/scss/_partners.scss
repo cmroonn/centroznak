@@ -1,6 +1,10 @@
 .partners {
   padding: 98px 0;
   background: #f8f8f8;
+
+  @media screen and (max-width: 500px) {
+    padding: 20px 0;
+  }
 }
 
 .partners__navigation {
@@ -17,9 +21,15 @@
 .partners__next_slide {
   background: none;
   border: none;
+  transition: 0.2s;
+  &:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+  }
 
-  &.swiper-button-disabled {
+  &:active {
     opacity: 0.3;
+    transition: 0.2s;
   }
 }
 
@@ -27,5 +37,6 @@
   img {
     display: block;
     margin: auto;
+    width: 100%;
   }
 }
