@@ -232,6 +232,8 @@ li {
       justify-content: center;
       font-size: 1em;
       height: auto; }
+      .header_wrap__nav .header__menu li .header_menu_point svg {
+        display: none; }
       .header_wrap__nav .header__menu li .header_menu_point:before {
         display: none; }
   .header_wrap__nav:after {

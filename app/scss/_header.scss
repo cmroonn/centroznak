@@ -152,6 +152,9 @@
         justify-content: center;
         font-size: 1em;
         height: auto;
+        svg {
+          display: none;
+        }
 
         &:before {
           display: none;
