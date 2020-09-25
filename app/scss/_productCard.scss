@@ -56,6 +56,16 @@
         transition: 1s;
       }
     }
+
+    @media screen and (max-width: 500px) {
+      top: 200px;
+      &.show {
+        height: 250px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-bottom: 30px;
+      }
+    }
   }
 
   &:after {
@@ -172,8 +182,8 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  right: 0;
-  top: 0;
+  right: 1px;
+  top: 1px;
   font-size: 18px;
   z-index: 1;
 
