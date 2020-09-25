@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const popularProds = new Swiper(".popular__carousel", {
       slidesPerView: 4,
       allowTouchMove: false,
+      spaceBetween: 10,
       navigation: {
         nextEl: ".popular__next_slide",
         prevEl: ".popular__prev_slide",
