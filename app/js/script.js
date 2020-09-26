@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       speed: 3000,
       autoplay: {
-        delay: 0,
+        delay: 500,
+        disableOnInteraction: false,
       },
 
       breakpoints: {
@@ -257,9 +258,14 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    const openOrderPopup = document.getElementById("orderCallOpen");
-    openOrderPopup.addEventListener("click", () => {
-      document.querySelector(".order_call").classList.add("show");
+    const openOrderPopup = document.querySelectorAll(
+      ".orderCallOpen, #orderCallOpen"
+    );
+
+    openOrderPopup.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelector(".order_call").classList.add("show");
+      });
     });
   }
 

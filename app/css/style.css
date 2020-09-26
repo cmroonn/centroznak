@@ -983,7 +983,11 @@ li {
     align-items: center; }
     .footer__down__links li a {
       font-weight: 300;
-      color: #898989; }
+      color: #898989;
+      transition: 0.2s; }
+      .footer__down__links li a:hover {
+        opacity: 0.5;
+        transition: 0.2s; }
     .footer__down__links li:after {
       content: "";
       width: 1px;

@@ -262,6 +262,12 @@
     a {
       font-weight: 300;
       color: #898989;
+      transition: 0.2s;
+
+      &:hover {
+        opacity: 0.5;
+        transition: 0.2s;
+      }
     }
 
     &:after {
@@ -307,6 +313,12 @@
   -ms-flex-align: center;
   align-items: center;
   font-weight: 900;
+  transition: 0.2s;
+
+  &:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+  }
 
   img {
     margin-left: 22px;
