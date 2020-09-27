@@ -316,6 +316,7 @@
                     placeholder="Фамилия"
                     required=""
                     tabindex="0"
+                    class="field"
                   />
                 </label>
               </div>
@@ -331,7 +332,7 @@
                     placeholder="Телефон*"
                     required=""
                     class="field"
-                    id="phone-mask"
+                    id="phone_field"
                   />
                 </label>
 
@@ -339,7 +340,7 @@
                   <div class="icon">
                     <img src="img/icons/mail_icon.svg" alt="e-mail" />
                   </div>
-                  <input type="text" name="e-mail" placeholder="E-mail" />
+                  <input type="text" name="email" placeholder="E-mail" />
                 </label>
               </div>
 
@@ -348,7 +349,12 @@
                   <div class="icon">
                     <img src="img/icons/marker_icon.svg" alt="" />
                   </div>
-                  <input type="text" name="address" placeholder="Адрес" />
+                  <input
+                    type="text"
+                    name="address"
+                    placeholder="Адрес"
+                    class="field"
+                  />
                 </label>
               </div>
 
@@ -448,7 +454,7 @@
 
               <p>16.000<span class="currency">₽</span></p>
 
-              <button type="button">Подтвердить заказ</button>
+              <button type="submit" id="cartSubmit">Подтвердить заказ</button>
 
               <label class="cart-checkbox cart__data-total-checkbox">
                 <input
