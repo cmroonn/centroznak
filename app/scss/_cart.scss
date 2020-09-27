@@ -793,6 +793,10 @@
   position: relative;
   padding-left: 26px;
   color: rgba(20, 20, 20, 0.5);
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cart-radio span:before {
   content: "";
