@@ -1017,7 +1017,11 @@ li {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  font-weight: 900; }
+  font-weight: 900;
+  transition: 0.2s; }
+  .footer__down__creator:hover {
+    opacity: 0.5;
+    transition: 0.2s; }
   .footer__down__creator img {
     margin-left: 22px; }
 
@@ -1993,7 +1997,8 @@ li {
 .cart-radio input {
   z-index: -1;
   position: absolute;
-  opacity: 0; }
+  opacity: 0;
+  display: none; }
 
 .cart-radio img {
   opacity: 0.5; }
@@ -2001,7 +2006,11 @@ li {
 .cart-radio span {
   position: relative;
   padding-left: 26px;
-  color: rgba(20, 20, 20, 0.5); }
+  color: rgba(20, 20, 20, 0.5);
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .cart-radio span:before {
   content: "";
