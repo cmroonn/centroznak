@@ -818,6 +818,7 @@
   background: #26cf92;
   border-radius: 50%;
   visibility: hidden;
+  background-clip: content-box;
 }
 /*
 .cart-radio span:before {

@@ -2029,7 +2029,8 @@ li {
   height: 8px;
   background: #26cf92;
   border-radius: 50%;
-  visibility: hidden; }
+  visibility: hidden;
+  background-clip: content-box; }
 
 /*
 .cart-radio span:before {
